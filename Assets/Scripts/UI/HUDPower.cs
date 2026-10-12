@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,17 @@ public class HUDPower : MonoBehaviour
 
     public void UpdateActivePower(Power power)
     {
-        hudpower.transform.GetChild(0);
+        switch(power)
+        {
+            case Power.Dash :
+                hudpower.transform.GetChild(0).GetComponent<RawImage>().color = Color.red;
+                hudpower.transform.GetChild(1).GetComponent<RawImage>().color = Color.white;
+                break;
+            case Power.FireArmor :
+                hudpower.transform.GetChild(0).GetComponent<RawImage>().color = Color.white;
+                hudpower.transform.GetChild(1).GetComponent<RawImage>().color = Color.red;
+                break;
+        }
+       
     } 
 }
