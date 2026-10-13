@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UI/QuitGame.unity
     guid: a9045b1dcbf3bf640b00848632ab8f17
+  - enabled: 1
+    path: Assets/Scenes/Level/Scene next.unity
+    guid: 73036900e24899242be57d234af960b0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
