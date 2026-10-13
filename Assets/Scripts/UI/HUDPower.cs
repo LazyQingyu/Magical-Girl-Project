@@ -1,11 +1,13 @@
-using System.Diagnostics;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HUDPower : MonoBehaviour
 {
     public GameObject hudpower;
+
+    void Start(){
+        
+    }
   
  
 
@@ -23,5 +25,10 @@ public class HUDPower : MonoBehaviour
                 break;
         }
        
-    } 
+    }
+
+ void SetPowerActive()
+    {
+        
+    }
 }

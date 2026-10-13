@@ -72,7 +72,7 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!1 &1710671820454158120
+--- !u!1 &4005441592163972799
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80,9 +80,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4659245681960175500}
-  - component: {fileID: 7634693215231535758}
-  - component: {fileID: 7016638992378404475}
+  - component: {fileID: 811121718791805837}
+  - component: {fileID: 6403844671826355366}
+  - component: {fileID: 5389785420298607471}
   m_Layer: 0
   m_Name: PowerDash
   m_TagString: Untagged
@@ -90,13 +90,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &4659245681960175500
+--- !u!224 &811121718791805837
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710671820454158120}
+  m_GameObject: {fileID: 4005441592163972799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -109,21 +109,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7634693215231535758
+--- !u!222 &6403844671826355366
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710671820454158120}
+  m_GameObject: {fileID: 4005441592163972799}
   m_CullTransparentMesh: 1
---- !u!114 &7016638992378404475
+--- !u!114 &5389785420298607471
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710671820454158120}
+  m_GameObject: {fileID: 4005441592163972799}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 10910, guid: 0000000000000000f000000000000000, type: 0}
+  m_Texture: {fileID: 10904, guid: 0000000000000000f000000000000000, type: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -176,8 +176,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4659245681960175500}
   - {fileID: 4568275790392572529}
+  - {fileID: 811121718791805837}
   m_Father: {fileID: 7566046577469977325}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -203,7 +203,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -284,7 +284,6 @@ GameObject:
   - component: {fileID: 6626312490217679485}
   - component: {fileID: 3583286617270048753}
   - component: {fileID: 1040254025959178612}
-  - component: {fileID: 1368178463638047691}
   m_Layer: 0
   m_Name: HUDCanvas
   m_TagString: Untagged
@@ -375,17 +374,3 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &1368178463638047691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8945685975092139500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 292f2eeb01c01b4458657cbd1a1d41f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HUDPower
-  hudpower: {fileID: 8433024274145262493}
-  Player: {fileID: 0}
