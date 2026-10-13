@@ -13,6 +13,7 @@ public class HUDPower : MonoBehaviour
 
     public void UpdateActivePower(Power power)
     {
+        Debug.Log(power);
         switch(power)
         {
             case Power.Dash :

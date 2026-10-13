@@ -3,9 +3,6 @@ using UnityEngine.Events;
 
 public class PlayerAction : MonoBehaviour
 {
-
-    //public delegate void DelegateActivePower(Power power);
-    //public static DelegateActivePower ActivePower;
     public UnityEvent <Power> ActivePower;
 
 
