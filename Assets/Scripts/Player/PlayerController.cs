@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 10;
     [SerializeField]
     private float moveSpeed = 5;
+
+    public UnityEvent <Power> ActivePower;
     void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -59,10 +62,13 @@ public class PlayerController : MonoBehaviour
     {
         jump_press = true;
     }
-    public void OnPowerOne(){}
+    public void OnPowerOne()
+    {
+        ActivePower?.Invoke(Power.Dash);
+    }
     public void OnPowerTwo()
     {
-
+        ActivePower?.Invoke(Power.FireArmor);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
