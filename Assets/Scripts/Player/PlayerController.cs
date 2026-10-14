@@ -59,7 +59,9 @@ public class PlayerController : MonoBehaviour
     {
         jump_press = true;
     }
-    public void OnPowerOne(){}
+    public void OnPowerOne(){
+		
+	}
     public void OnPowerTwo()
     {
 

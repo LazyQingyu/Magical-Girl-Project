@@ -11,12 +11,13 @@ public class VieJoueur : MonoBehaviour
 {
 
 	public GameObject coeurs;
-	public SaveLife vie;
-	//public int vieJoueur = 3;
-	
+	public GameManager vie;
+	int vies;
+
     void Start()
     {
-		//SaveLife.lifeJoueur = vieJoueur;
+		 vies = GameManager.lifeJoueur = 3;
+		
     }
 
     void Update()
@@ -27,28 +28,31 @@ public class VieJoueur : MonoBehaviour
 	public void OnCollisionEnter2D(Collision2D collision){
 		if(collision.gameObject.CompareTag("Vie")){
 			Destroy(collision.gameObject);
-			if(SaveLife.lifeJoueur > 0 && SaveLife.lifeJoueur < 3){
-				coeurs.transform.GetChild(SaveLife.lifeJoueur).gameObject.SetActive(true);
-				SaveLife.lifeJoueur += 1;
+			if(vies > 0 && vies < 3){
+				coeurs.transform.GetChild(vies).gameObject.SetActive(true);
+				vies += 1;
 				//SaveLife.lifeJoueur += 1;
 				//Debug.Log(SaveLife.lifeJoueur);
+				UpdateLife(vies);
 			}
 		}
 
 		if(collision.gameObject.CompareTag("Bombe")){
 				Destroy(collision.gameObject);
-				SaveLife.lifeJoueur -= 1;
+				vies -= 1;
+				UpdateLife(vies);
 				//SaveLife.lifeJoueur -= 1;
 				//Debug.Log(SaveLife.lifeJoueur);
-				coeurs.transform.GetChild(SaveLife.lifeJoueur).gameObject.SetActive(false);
+				coeurs.transform.GetChild(vies).gameObject.SetActive(false);
 		}
-			if(SaveLife.lifeJoueur == 0){
+		if(vies == 0){
 				Destroy(gameObject);
-				SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-				SaveLife.lifeJoueur = 3;
-			}
+				SceneManager.LoadScene("EndGame");
+		}
 
 	}
-
+void UpdateLife(int life){
+	GameManager.lifeJoueur = life;
+}
 	
 }
