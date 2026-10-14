@@ -14,20 +14,9 @@ TagManager:
   - Diamond Blue
   - Diamond Red
   - Diamond Purple
-  - DiamondRedPowerUp
-  - DiamondRedBar
-  - EtoileBar
-  - DiamondBar
-  - Mur
   - DiamondBluePowerUp
-  - DiamondPurpleBar
-  - DiamondPurplePowerUp
   - DiamondBlueBar
-  - Serpent
-  - EtoilePowerUp
-  - Pouvoirs
-  - Vie
-  - Sol
+  - DiamondBar
   - Ground
   layers:
   - Default

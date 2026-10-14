@@ -97,9 +97,19 @@
                     "priority": 0
                 },
                 {
-                    "name": "New action",
+                    "name": "PowerOne",
                     "type": "Button",
-                    "id": "0b0aa990-e01a-4775-80c1-3fc2be36b5e0",
+                    "id": "613db058-be8f-4531-8973-0d5faaf6e55a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "PowerTwo",
+                    "type": "Button",
+                    "id": "eff45123-c7a9-479d-ae21-4b0f7ba5f81a",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -495,12 +505,45 @@
                 },
                 {
                     "name": "",
-                    "id": "49236923-7cbc-4e54-9502-64939ae2f623",
-                    "path": "<Keyboard>/k",
+                    "id": "40a20722-a573-4ea9-a51f-0f875b1d7bc5",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "New action",
+                    "action": "PowerOne",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "735ea712-1c74-4c83-a0a5-82297ca1f0ab",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "PowerOne",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3f1a3cdf-f9b2-4496-97b6-8765c4117876",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "PowerTwo",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "efaeac4c-d904-466e-a8af-7004e79f8544",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "PowerTwo",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
