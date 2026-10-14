@@ -24,22 +24,11 @@ public class ActionsButtonsEndGame : MonoBehaviour
 	
 	public void Rejouer()
 	{
-		SceneManager.LoadScene("Game");
-		NewScriptableObjectScript.scores = 0;
-		PlayerPrefs.SetInt("Score", 0);
-		PlayerPrefs.Save();
-		
+		SceneManager.LoadScene("Base Level");
 	}
 	
 	public void Quitter()
 	{
-		//PlayerPrefs.DeleteKey("Score Max");
-		if(NewScriptableObjectScript.scores > 0){
-		NewScriptableObjectScript.scores = 0;
-		PlayerPrefs.SetInt("Score", 0);
-		PlayerPrefs.Save();
-		Debug.Log("Score :  " + NewScriptableObjectScript.scores);
-		}
 		SceneManager.LoadScene("QuitGame");
 	}
 }

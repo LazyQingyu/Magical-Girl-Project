@@ -1,0 +1,377 @@
+using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Collections;
+using UnityEngine.InputSystem;
+using System.Collections.Generic;
+public class ActionsButtonsGame : MonoBehaviour
+{
+	
+	public float vitesse = 1.0f;
+	public ScoreTexte scoreTexte;
+	public ScoreMaxTexte scoremaxTexte;
+	
+	public bool etoileActive = false;
+	public bool diamondActive = false;
+	public bool diamondblueActive = false;
+	public bool diamondredActive = false;
+	public bool diamondpurpleActive = false;
+	
+	public int tempsEtoile = 15;
+	public int tempsDiamond = 3;
+	public int tempsDiamondBlue = 6;
+	public int tempsDiamondRed = 9;
+	public int tempsDiamondPurple = 12;
+	
+	public GameObject rat;
+	public GameObject bombe;
+	public GameObject etoile;
+	public GameObject diamond;
+	public GameObject diamondBlue;
+	public GameObject diamondRed;
+	public GameObject diamondPurple;
+	
+	public NewScriptableObjectScript scores;
+	private SpriteRenderer spriteRenderer;
+
+	public GameObject explosionEffect;
+	public GameObject jeuTerminer;
+	public GameObject buttonRejouer;
+	public GameObject buttonQuitter;
+	public GameObject backgroundGame;
+	public GameObject scoreButton;
+	public GameObject powerupButton;
+	public GameObject serpent;
+	public GameObject[] objets;
+	public float delaystart = 1.0f;
+	public float interval = 3.0f;
+	private float valuePositionX = 835.0f;
+	private float valuePositionY = 435.0f;
+	public ChangeMusique changeMusique;
+	public ParticleSystem myParticleSystem;
+	public PrefabsScript prefabs;
+
+    void Start()
+    {			
+
+		spriteRenderer = GetComponent<SpriteRenderer>();
+		scoremaxTexte.scoreMax = PlayerPrefs.GetInt("Score Max", scoremaxTexte.scoreMax);
+		NewScriptableObjectScript.scores = PlayerPrefs.GetInt("Score", NewScriptableObjectScript.scores);
+		scoremaxTexte.maxScoreText.text = "Meilleur score : " + scoremaxTexte.scoreMax;
+		scoreTexte.scoreText.text = "Score : " + NewScriptableObjectScript.scores;
+
+    }
+
+
+	
+    void Update()
+    {
+
+        if (NewScriptableObjectScript.scores > scoremaxTexte.scoreMax)
+        {
+            scoremaxTexte.scoreMax = NewScriptableObjectScript.scores;
+            PlayerPrefs.SetInt("Score Max", scoremaxTexte.scoreMax);			
+            scoremaxTexte.maxScoreText.text = "Score Max : " + scoremaxTexte.scoreMax;
+        }
+
+		NewScriptableObjectScript.scores = Mathf.FloorToInt(PlayerPrefs.GetInt("Score", NewScriptableObjectScript.scores));
+
+
+		if (Input.GetKey(KeyCode.Escape))
+        {
+		if(NewScriptableObjectScript.scores > 0){
+			scoreTexte.scoreText.text = "Score : " + NewScriptableObjectScript.scores;
+			PlayerPrefs.SetInt("Score", NewScriptableObjectScript.scores);
+			PlayerPrefs.Save();
+		}
+		Time.timeScale = 0f;
+        SceneManager.LoadScene("PauseGame");
+		
+        }
+
+
+			if(Input.GetKey(KeyCode.UpArrow)){
+				transform.Translate(Vector3.up * Time.deltaTime * vitesse);
+				spriteRenderer.flipX = false;
+				spriteRenderer.flipY = false;
+
+			}
+			if(Input.GetKey(KeyCode.DownArrow)){
+				transform.Translate(Vector3.down * Time.deltaTime * vitesse);
+
+				spriteRenderer.flipX = false;
+				spriteRenderer.flipY = true;
+			}
+			if(Input.GetKey(KeyCode.RightArrow)){
+				transform.Translate(Vector3.right * Time.deltaTime * vitesse);
+				spriteRenderer.flipX = true;
+				spriteRenderer.flipY = false;
+			}
+			if(Input.GetKey(KeyCode.LeftArrow)){
+				transform.Translate(Vector3.left * Time.deltaTime * vitesse);
+				spriteRenderer.flipX = false;
+				spriteRenderer.flipY = false;
+			}			
+
+    }
+
+
+    IEnumerator PowerUpEtoile(int secondes)
+    {
+		
+        
+               while (secondes > 0)
+        {
+            Debug.Log("Etoile activé pendant : " + secondes + "s");
+            
+            yield return new WaitForSeconds(1f);
+            
+            secondes--;
+		
+			etoile.SetActive(true);
+        }
+		
+		etoile.SetActive(false);
+		etoileActive = false;
+    }
+
+    IEnumerator PowerUpDiamond(int secondes)
+    {
+		
+               while (secondes > 0)
+        {
+            Debug.Log("Diamant activé pendant : " + secondes + "s");
+            
+            yield return new WaitForSeconds(1f);
+            
+            secondes--;
+			
+			diamond.SetActive(true);
+        }
+		
+			diamond.SetActive(false);
+			diamondActive = false;
+    }
+	
+    IEnumerator PowerUpDiamondBlue(int secondes)
+    {
+		
+			while (secondes > 0)
+        {
+            Debug.Log("Diamant blue activé pendant : " + secondes + "s");
+            
+            yield return new WaitForSeconds(1f);
+            
+            secondes--;
+			diamondBlue.SetActive(true);
+        }
+		   
+			diamondBlue.SetActive(false);
+			diamondblueActive = false;
+    }
+	
+	    IEnumerator PowerUpDiamondRed(int secondes)
+    {
+		
+            while (secondes > 0)
+        {
+            Debug.Log("Diamant rouge activé pendant : " + secondes + "s");
+            
+            yield return new WaitForSeconds(1f);
+            
+            secondes--;
+			diamondRed.SetActive(true);
+        }
+
+			diamondRed.SetActive(false);
+			diamondredActive = false;
+    }
+	
+	    IEnumerator PowerUpDiamondPurple(int secondes)
+    {
+
+        
+			while (secondes > 0)
+        {
+            Debug.Log("Diamant violet activé pendant : " + secondes + "s");
+            
+            yield return new WaitForSeconds(1f);
+            
+            secondes--;
+			diamondPurple.SetActive(true);
+        }
+
+		diamondPurple.SetActive(false);
+		diamondpurpleActive = false;
+    }
+
+	public void OnCollisionEnter2D(Collision2D collision){
+			
+		if(collision.gameObject.CompareTag("TextBar") || collision.gameObject.CompareTag("EtoileBar") || collision.gameObject.CompareTag("DiamondBar") || collision.gameObject.CompareTag("DiamondBlueBar") || collision.gameObject.CompareTag("DiamondRedBar") || collision.gameObject.CompareTag("DiamondPurpleBar")){
+			
+			if(gameObject != null){
+				Instantiate(explosionEffect, transform.position, Quaternion.identity);
+				Destroy(gameObject);				
+				//SceneManager.LoadScene("EndGame");
+				scoreButton.SetActive(false);
+				powerupButton.SetActive(false);
+				serpent.SetActive(false);
+				jeuTerminer.SetActive(true);
+				buttonRejouer.SetActive(true);
+				buttonQuitter.SetActive(true);
+				backgroundGame.SetActive(true);
+			}
+		
+		}	
+		
+		
+		if(collision.gameObject.CompareTag("Pouvoirs")){
+			if(gameObject != null){
+				Instantiate(explosionEffect, transform.position, Quaternion.identity);
+				Destroy(gameObject);
+				//SceneManager.LoadScene("EndGame");
+				scoreButton.SetActive(false);
+				powerupButton.SetActive(false);
+				serpent.SetActive(false);
+				jeuTerminer.SetActive(true);
+				buttonRejouer.SetActive(true);
+				buttonQuitter.SetActive(true);
+				backgroundGame.SetActive(true);
+			}
+		
+		}
+			
+		if(collision.gameObject.CompareTag("Score")){
+			
+			if(gameObject != null){
+				Instantiate(explosionEffect, transform.position, Quaternion.identity);
+				Destroy(gameObject);
+				//SceneManager.LoadScene("EndGame");
+				scoreButton.SetActive(false);
+				powerupButton.SetActive(false);
+				serpent.SetActive(false);
+				jeuTerminer.SetActive(true);
+				buttonRejouer.SetActive(true);
+				buttonQuitter.SetActive(true);
+				backgroundGame.SetActive(true);
+			}
+			
+
+		}
+		if(collision.gameObject.CompareTag("Rat")){
+			
+			if(collision.gameObject != null){
+				
+				Destroy(collision.gameObject);
+			}
+			if(vitesse <= 1000.0f){
+				vitesse += Time.deltaTime*NewScriptableObjectScript.scores*5;
+			} else {
+				vitesse = 1000.0f;
+			}
+
+			NewScriptableObjectScript.scores += 1;
+			PlayerPrefs.SetInt("Score", NewScriptableObjectScript.scores);
+			PlayerPrefs.Save();
+			transform.localScale += new Vector3(1.0f,1.0f,1.0f);
+			
+		}	
+		if(collision.gameObject.CompareTag("Bombe") || collision.gameObject.CompareTag("Mur")){
+			
+			if(etoileActive == true || diamondActive == true || diamondblueActive == true || diamondredActive == true){
+			if(collision.gameObject != null){
+				Destroy(collision.gameObject);
+
+			}
+			} else {
+				
+				if(gameObject != null){
+						
+				Instantiate(explosionEffect, transform.position, Quaternion.identity);
+				//SceneManager.LoadScene("EndGame"); 
+				Destroy(gameObject);
+
+				scoreButton.SetActive(false);
+				powerupButton.SetActive(false);
+				serpent.SetActive(false);
+				jeuTerminer.SetActive(true);
+				buttonRejouer.SetActive(true);
+				buttonQuitter.SetActive(true);
+				backgroundGame.SetActive(true);
+
+				changeMusique.audioSource.Stop();
+				changeMusique.audioSource.clip = changeMusique.nouveauClip;
+				changeMusique.audioSource.Play();
+
+    }
+	
+			}
+			}
+			
+		if(collision.gameObject.CompareTag("Etoile")){
+			etoileActive = true;
+		if(etoileActive == true){
+			StartCoroutine(PowerUpEtoile(tempsEtoile));
+			transform.localScale += new Vector3(2.4f,2.4f,2.4f);
+		}
+			if(collision.gameObject != null){
+				Destroy(collision.gameObject);
+			}
+
+		}
+		if(collision.gameObject.CompareTag("Diamond")){
+			diamondActive = true;
+			if(diamondActive == true){
+			StartCoroutine(PowerUpDiamond(tempsDiamond));
+			transform.localScale -= new Vector3(1.2f,1.2f,1.2f);
+		}
+			if(collision.gameObject != null){
+				Destroy(collision.gameObject);
+			}
+			
+		}
+		if(collision.gameObject.CompareTag("Diamond Blue")){
+			diamondblueActive = true;
+			if(diamondblueActive == true){
+			StartCoroutine(PowerUpDiamondBlue(tempsDiamondBlue));
+			transform.localScale -= new Vector3(0.3f,0.3f,0.3f);
+		}
+			if(collision.gameObject != null){
+				Destroy(collision.gameObject);
+			}
+
+		}
+		if(collision.gameObject.CompareTag("Diamond Red")){
+			diamondredActive = true;
+			if(diamondredActive == true){
+			StartCoroutine(PowerUpDiamondRed(tempsDiamondRed));
+			transform.localScale -= new Vector3(0.6f,0.6f,0.6f);
+		}
+		
+			if(collision.gameObject != null){
+				Destroy(collision.gameObject);
+			}
+
+		}
+		if(collision.gameObject.CompareTag("Diamond Purple")){
+			diamondpurpleActive = true;
+			if(diamondpurpleActive == true){
+			StartCoroutine(PowerUpDiamondPurple(tempsDiamondPurple));
+			transform.localScale -= new Vector3(0.9f,0.9f,0.9f);
+		}
+			if(collision.gameObject != null){
+				Destroy(collision.gameObject);
+			}
+		}
+	}
+
+
+	
+}
+
+
+
+
+
+

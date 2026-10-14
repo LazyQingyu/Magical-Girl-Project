@@ -78,14 +78,14 @@ public class ActionsButtonsGame : MonoBehaviour
 		NewScriptableObjectScript.scores = Mathf.FloorToInt(PlayerPrefs.GetInt("Score", NewScriptableObjectScript.scores));
 
 
-		if (Input.GetKey(KeyCode.Escape))
+		if (Input.GetKeyDown(KeyCode.Escape))
         {
 		if(NewScriptableObjectScript.scores > 0){
 			scoreTexte.scoreText.text = "Score : " + NewScriptableObjectScript.scores;
 			PlayerPrefs.SetInt("Score", NewScriptableObjectScript.scores);
 			PlayerPrefs.Save();
 		}
-		
+		Time.timeScale = 0f;
         SceneManager.LoadScene("PauseGame");
 		
         }
