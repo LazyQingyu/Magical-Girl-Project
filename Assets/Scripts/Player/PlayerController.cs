@@ -122,7 +122,6 @@ public class PlayerController : MonoBehaviour
     {
         jump_press = true;
     }
-
     Power SelectPower(Power currentPowerSelected)
     {
         if(currentPowerSelected == powerSelected)
