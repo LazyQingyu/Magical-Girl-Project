@@ -115,6 +115,16 @@
                     "interactions": "",
                     "initialStateCheck": false,
                     "priority": 0
+                },
+                {
+                    "name": "UsePower",
+                    "type": "Button",
+                    "id": "4e67d143-8620-4f0c-b919-099668934bb6",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -544,6 +554,28 @@
                     "processors": "",
                     "groups": ";Gamepad",
                     "action": "PowerTwo",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4e6927c-874c-4618-b300-e813e3782e95",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "UsePower",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "be993762-7281-4407-9868-2f2afcaf1cd4",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "UsePower",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
