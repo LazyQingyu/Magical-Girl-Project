@@ -45,14 +45,15 @@ public class PowerManager : MonoBehaviour
 				ArmureDeFeuUp.gameObject.SetActive(!state);//ArmureDeFeuUp Activer/Désactiver Activer
 
 			break;
-			/*
+			
 			case Power.None:
 			
-				PouvoirDashDown.gameObject.SetActive(state);//PowerDashDown Activer/Désactiver Désactiver
+				PouvoirDashDown.gameObject.SetActive(!state);//PowerDashDown Activer/Désactiver Désactiver
 				PouvoirDashUp.gameObject.SetActive(state);//ArmureDeFeuDown Activer/Désactiver Activer
-				ArmureDeFeuDown.gameObject.SetActive(state);//PowerDashUp Activer/Désactiver Désactiver
+				ArmureDeFeuDown.gameObject.SetActive(!state);//PowerDashUp Activer/Désactiver Désactiver
 				ArmureDeFeuUp.gameObject.SetActive(state);//ArmureDeFeuUp Activer/Désactiver Activer
-				*/
+				
+			break;
 		}
 
 	}

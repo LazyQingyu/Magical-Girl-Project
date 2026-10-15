@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3936447036624470090}
   - component: {fileID: 8946032214992438624}
-  - component: {fileID: 9061709170993578456}
   - component: {fileID: 3103258190627820710}
   - component: {fileID: 199197362601674611}
   - component: {fileID: 777504960717140287}
@@ -97,33 +96,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &9061709170993578456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7166360323493929138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 378ca0e132ebf704b8619d20d06ed62f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerAction
-  ActivePower:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HUDPower, Assembly-CSharp
-        m_MethodName: UpdateActivePower
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!61 &3103258190627820710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -195,8 +167,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!70 &777504960717140287
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -410,4 +382,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   isGround: 0
   jumpForce: 10
+  dash_force: 5
+  dashingTime: 0.2
   moveSpeed: 7
+  ActivePower:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: HUDPower, Assembly-CSharp
+        m_MethodName: UpdateActivePower
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

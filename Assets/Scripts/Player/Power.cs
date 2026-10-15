@@ -1,5 +1,6 @@
 public enum Power
 {
   Dash,
-  FireArmor
+  FireArmor,
+  None
 }
