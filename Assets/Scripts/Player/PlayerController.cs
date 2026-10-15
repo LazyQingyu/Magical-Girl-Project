@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.Burst.CompilerServices;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -83,14 +82,14 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Dash()
     {
-        if (canDash)
+        if (canDash && !isGround)
         {
             canDash = false;
             isDashing = true;
             float originGravity = body2D.gravityScale;
             body2D.gravityScale = 0f;
             body2D.linearVelocityY = 0f;
-            body2D.linearVelocity = new Vector2(transform.localScale.x * dash_force, 0f);
+            body2D.linearVelocity = new Vector2(transform.localScale.x * move_input.x * dash_force, 0f);
             yield return new WaitForSeconds(dashingTime);
             body2D.gravityScale = originGravity;
             isDashing = false;
@@ -107,10 +106,10 @@ public class PlayerController : MonoBehaviour
         power_press = false;
         switch(powerSelected)
         {
-            case global::Power.Dash :
+            case POWERNONE :
                 UseDash();
                 break;
-            case global::Power.FireArmor :
+            case POWERTWO :
                 UseFireArmor();
                 break;
         }
@@ -124,26 +123,26 @@ public class PlayerController : MonoBehaviour
         jump_press = true;
     }
 
-    void SelectPower(Power currentPowerSelected)
+    Power SelectPower(Power currentPowerSelected)
     {
         if(currentPowerSelected == powerSelected)
         {
-            powerSelected = POWERNONE;
+            ActivePower?.Invoke(POWERNONE);
+            return POWERNONE;
         }
         else
         {
-            powerSelected = currentPowerSelected;
+            ActivePower?.Invoke(currentPowerSelected);
+            return currentPowerSelected;
         }
     }
     public void OnPowerOne()
     {
-		ActivePower?.Invoke(POWERONE);
-        SelectPower(POWERONE);
+        powerSelected = SelectPower(POWERONE);
 	}
     public void OnPowerTwo()
     {
-        ActivePower?.Invoke(POWERTWO);
-        SelectPower(POWERONE);
+        powerSelected = SelectPower(POWERTWO);
     }
     public void OnUsePower()
     {
