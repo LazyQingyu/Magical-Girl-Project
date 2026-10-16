@@ -60,17 +60,20 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, rayCastSize , layerMaskGround);
         player_animator.SetBool("isGrounded", isGrounded);
         player_animator.SetBool("Run", (move_input.x == 0)? false : true);
-        if(move_input.x == -1)
+        FlipPlayer();
+    }
+
+    void FlipPlayer()
+    {
+        if (move_input.x < 0)
         {
             playerSprite.flipX = true;
         }
-        else
+        else if (move_input.x > 0)
         {
             playerSprite.flipX = false;
         }
-
     }
-
     void FixedUpdate()
     {
         
