@@ -165,6 +165,7 @@ public class PlayerController : MonoBehaviour
         {
             if (!isFireArmor)
             {
+                Debug.Log("I'm in Fire heheh");
                 HitByFire?.Invoke();
             }
         }
