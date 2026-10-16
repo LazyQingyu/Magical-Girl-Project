@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private bool power_press;
     private bool canDash;
     private bool isDashing;
+    private bool isFireArmor = false;
     
 
     public float jumpForce = 10;
@@ -30,6 +31,8 @@ public class PlayerController : MonoBehaviour
     Power powerSelected;
 
     public UnityEvent <Power> ActivePower;
+    public UnityEvent <bool> FireArmorStatus;
+    public UnityEvent HitByFire;
     void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -71,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        body2D.linearVelocityX = move_input.x * moveSpeed;  
+        body2D.linearVelocityX = move_input.x * moveSpeed;
     }
 
     void UseDash()
@@ -98,15 +101,18 @@ public class PlayerController : MonoBehaviour
     }
     void UseFireArmor()
     {
-        Debug.Log("Fire Armor active");
+        isFireArmor = !isFireArmor;
+        FireArmorStatus?.Invoke(isFireArmor);
     }
+
+
 
     void Power()
     {
         power_press = false;
         switch(powerSelected)
         {
-            case POWERNONE :
+            case POWERONE :
                 UseDash();
                 break;
             case POWERTWO :
@@ -153,7 +159,15 @@ public class PlayerController : MonoBehaviour
         { 
             isGround = true;
             canDash = true;
-        }      
+        }
+
+        if (collision.CompareTag("Fire"))
+        {
+            if (!isFireArmor)
+            {
+                HitByFire?.Invoke();
+            }
+        }
     }
 
 }

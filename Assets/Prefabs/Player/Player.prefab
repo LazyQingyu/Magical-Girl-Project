@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 777504960717140287}
   - component: {fileID: 7925591772615123882}
   - component: {fileID: 1867890218523222410}
+  - component: {fileID: 1631827700747831522}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -400,3 +401,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  FireArmorStatus:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1631827700747831522}
+        m_TargetAssemblyTypeName: PlayerAnim, Assembly-CSharp
+        m_MethodName: FireArmorFx
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  HitByFire:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1631827700747831522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7166360323493929138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c265b7bde07a144448af9c6a227b63a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnim
+  fireArmorParticles: {fileID: 1654180126310678969, guid: 99c2b06d8e85b5d4e86aac742ffd4c40, type: 3}
