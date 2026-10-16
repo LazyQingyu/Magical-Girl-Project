@@ -20,12 +20,10 @@ public class PowerManager : MonoBehaviour
     }
 	
 	public void AssignPower(Power sort){
-		
-		
-		
 
 		
 		switch(sort){
+			
 			case Power.Dash:
 
 				PouvoirDashDown.gameObject.SetActive(state);

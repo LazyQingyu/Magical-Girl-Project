@@ -31,15 +31,18 @@ public class Joueur : MonoBehaviour
 	public Button buttonRejouer;
 	public Button buttonQuitter;
 	public GameObject backgroundGame;
+	private Animator animator;
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
 		rb = GetComponent<Rigidbody2D>();
+		animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+		
 		isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
 		
 		float rotationX = Input.GetAxis("Horizontal") * angle;
@@ -48,14 +51,16 @@ public class Joueur : MonoBehaviour
 			if(Input.GetKey(KeyCode.RightArrow)){
 				transform.Translate(Vector3.right * Time.deltaTime * vitesse);
 				transform.rotation = Quaternion.Slerp (transform.rotation, cible, Time.deltaTime * rotation);
-				spriteRenderer.flipX = true;
+				spriteRenderer.flipX = false;
 				spriteRenderer.flipY = false;
+				
 			}
 			if(Input.GetKey(KeyCode.LeftArrow)){
 				transform.rotation = Quaternion.Slerp (transform.rotation, cible, Time.deltaTime * rotation);
 				transform.Translate(Vector3.left * Time.deltaTime * vitesse);
-				spriteRenderer.flipX = false;
+				spriteRenderer.flipX = true;
 				spriteRenderer.flipY = false;
+				
 			}
 			if(Input.GetKey(KeyCode.A)){
 				transform.rotation = Quaternion.Slerp (transform.rotation, cible, Time.deltaTime * rotation);
@@ -69,11 +74,33 @@ public class Joueur : MonoBehaviour
 				spriteRenderer.flipX = false;
 				spriteRenderer.flipY = false;
 			}
+			if(Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)){
 
+				animator.SetBool("Run", true);
+
+					
+				} else {
+					
+				animator.SetBool("Run", false);
+				
+			}
+			/*
+			if(Input.GetKey(KeyCode.RightArrow)){
+				transform.Translate(Vector3.right * Time.deltaTime * vitesse);
+				spriteRenderer.flipX = true;
+				spriteRenderer.flipY = false;
+			}
+			if(Input.GetKey(KeyCode.LeftArrow)){
+				transform.Translate(Vector3.left * Time.deltaTime * vitesse);
+				spriteRenderer.flipX = false;
+				spriteRenderer.flipY = false;
+			}
+			*/
 if(Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded && active_saut){
 
 	rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 	active_saut = false;
+
 }
 	if(rb.linearVelocity.y < 0 || Input.GetKeyUp(KeyCode.Space)){
 		rb.gravityScale = 2;
@@ -82,6 +109,14 @@ if(Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded && active_saut){
 	if(isGrounded && rb.linearVelocity.y < 0)
 	{
 		rb.gravityScale = 1;
+	}
+	
+		
+	if(Input.GetKey(KeyCode.Space))
+	{
+		animator.SetBool("Jump", true);
+	} else {
+		animator.SetBool("Jump", false);
 	}
 	
 	if (Input.GetKeyDown(KeyCode.Escape)){

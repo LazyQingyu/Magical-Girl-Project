@@ -1,0 +1,1339 @@
+fileFormatVersion: 2
+guid: 52407eaad4da30745a8c1ad5b0a7aac1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4934839030878517024
+    second: mapcave_0
+  - first:
+      213: 4752128087852475180
+    second: mapcave_1
+  - first:
+      213: -4815301216179849833
+    second: mapcave_2
+  - first:
+      213: -6014179575808509885
+    second: mapcave_3
+  - first:
+      213: -5695570385409715871
+    second: mapcave_4
+  - first:
+      213: 2337151320984001073
+    second: mapcave_5
+  - first:
+      213: 3956922976921938219
+    second: mapcave_6
+  - first:
+      213: -1003570296235605703
+    second: mapcave_7
+  - first:
+      213: -5839213765124058940
+    second: mapcave_8
+  - first:
+      213: 1894032879269511881
+    second: mapcave_9
+  - first:
+      213: 8734004182145006032
+    second: mapcave_10
+  - first:
+      213: 6312401390342007472
+    second: mapcave_11
+  - first:
+      213: 6411101143484871502
+    second: mapcave_12
+  - first:
+      213: 3099011807048801650
+    second: mapcave_13
+  - first:
+      213: -8486780355061531005
+    second: mapcave_14
+  - first:
+      213: 7662420194106725841
+    second: mapcave_15
+  - first:
+      213: 2303408614739272564
+    second: mapcave_16
+  - first:
+      213: 7989804603904578378
+    second: mapcave_17
+  - first:
+      213: 1682958280020848390
+    second: mapcave_18
+  - first:
+      213: -8877296935788728425
+    second: mapcave_19
+  - first:
+      213: 5878266105806344130
+    second: mapcave_20
+  - first:
+      213: 68861960770808690
+    second: mapcave_21
+  - first:
+      213: -5822943466845375181
+    second: mapcave_22
+  - first:
+      213: -7180294509499476964
+    second: mapcave_23
+  - first:
+      213: 6693012085224715442
+    second: mapcave_24
+  - first:
+      213: -4436129442736991463
+    second: mapcave_25
+  - first:
+      213: -4264529154631251100
+    second: mapcave_26
+  - first:
+      213: 5453128430476338858
+    second: mapcave_27
+  - first:
+      213: 3388803654055209146
+    second: mapcave_28
+  - first:
+      213: 1615349388517003323
+    second: mapcave_29
+  - first:
+      213: -1980568360465181405
+    second: mapcave_30
+  - first:
+      213: 3245895459683147405
+    second: mapcave_31
+  - first:
+      213: 4344487605083819679
+    second: mapcave_32
+  - first:
+      213: -7518484550444778972
+    second: mapcave_33
+  - first:
+      213: -4988321429037049572
+    second: mapcave_34
+  - first:
+      213: -955146326652210390
+    second: mapcave_35
+  - first:
+      213: 7434813819856934754
+    second: mapcave_36
+  - first:
+      213: -1563300618486890792
+    second: mapcave_37
+  - first:
+      213: -1756372420835511110
+    second: mapcave_38
+  - first:
+      213: -8917689547231393909
+    second: mapcave_39
+  - first:
+      213: 7771535250373556499
+    second: mapcave_40
+  - first:
+      213: 4987784522945220472
+    second: mapcave_41
+  - first:
+      213: -9163583927807506300
+    second: mapcave_42
+  - first:
+      213: -4758177996445272588
+    second: mapcave_43
+  - first:
+      213: -2785881615452708820
+    second: mapcave_44
+  - first:
+      213: 6999853657480151702
+    second: mapcave_45
+  - first:
+      213: -8256511975223062511
+    second: mapcave_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mapcave_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 639
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0273f33e3f11c7440800000000000000
+      internalID: 4934839030878517024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 639
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c236a9b6153f2f140800000000000000
+      internalID: 4752128087852475180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_2
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 639
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795f7137e0d9c2db0800000000000000
+      internalID: -4815301216179849833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_3
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 639
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34836805a87598ca0800000000000000
+      internalID: -6014179575808509885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_4
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 639
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1615b6039e445f0b0800000000000000
+      internalID: -5695570385409715871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_5
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 639
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a16916eba3f6020800000000000000
+      internalID: 2337151320984001073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_6
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 639
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29630b9b70d9e630800000000000000
+      internalID: 3956922976921938219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_7
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 639
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9314eb9f12a9212f0800000000000000
+      internalID: -1003570296235605703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 511
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c09532a402f6fea0800000000000000
+      internalID: -5839213765124058940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_9
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 511
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c205c16ed4f84a10800000000000000
+      internalID: 1894032879269511881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_10
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 511
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d97787678a653970800000000000000
+      internalID: 8734004182145006032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_11
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 511
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba6407be972a9750800000000000000
+      internalID: 6312401390342007472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_12
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 511
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e433484c58ec8f850800000000000000
+      internalID: 6411101143484871502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_13
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 511
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d92e9b1d6e10b20800000000000000
+      internalID: 3099011807048801650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_14
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 511
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e3bc16b36e83a80800000000000000
+      internalID: -8486780355061531005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_15
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 511
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5d28db192665a60800000000000000
+      internalID: 7662420194106725841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473eb1e5ee957ff10800000000000000
+      internalID: 2303408614739272564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_17
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 383
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43538894fc71ee60800000000000000
+      internalID: 7989804603904578378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_18
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 383
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fe17493a11b5710800000000000000
+      internalID: 1682958280020848390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_19
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 383
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f26a888718dc480800000000000000
+      internalID: -8877296935788728425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_20
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 383
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf4ecbf0ebc39150800000000000000
+      internalID: 5878266105806344130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_21
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 383
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27be746a695a4f000800000000000000
+      internalID: 68861960770808690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_22
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 383
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335ff77a4cfb03fa0800000000000000
+      internalID: -5822943466845375181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_23
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 383
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14989abf287a5c90800000000000000
+      internalID: -7180294509499476964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b43739c70b52ec50800000000000000
+      internalID: 6693012085224715442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_25
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 255
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913920486c3bf62c0800000000000000
+      internalID: -4436129442736991463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_26
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 255
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b48eb045951d4c0800000000000000
+      internalID: -4264529154631251100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_27
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 255
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa620256a676dab40800000000000000
+      internalID: 5453128430476338858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_28
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 255
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8a18df7f2770f20800000000000000
+      internalID: 3388803654055209146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_29
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 255
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3053bad5bfda6610800000000000000
+      internalID: 1615349388517003323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_30
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 255
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3255815d19b9384e0800000000000000
+      internalID: -1980568360465181405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_31
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 255
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e977c19bcbb0d20800000000000000
+      internalID: 3245895459683147405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ecb107578ba4c30800000000000000
+      internalID: 4344487605083819679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_33
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 127
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42af971d22af8a790800000000000000
+      internalID: -7518484550444778972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_34
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 127
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1917cce61ce5cab0800000000000000
+      internalID: -4988321429037049572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_35
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 127
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23306bf973aeb2f0800000000000000
+      internalID: -955146326652210390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_36
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 127
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267dcbf17c3cd2760800000000000000
+      internalID: 7434813819856934754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_37
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 127
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8deb0f5ce5a0e4ae0800000000000000
+      internalID: -1563300618486890792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_38
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 127
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab47ec2c69c10a7e0800000000000000
+      internalID: -1756372420835511110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_39
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 127
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b870f00da900e3480800000000000000
+      internalID: -8917689547231393909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31931f5822a0adb60800000000000000
+      internalID: 7771535250373556499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_41
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f4752e89b283540800000000000000
+      internalID: 4987784522945220472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_42
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4880e89e7f864d080800000000000000
+      internalID: -9163583927807506300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_43
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5bcc7725e87fdb0800000000000000
+      internalID: -4758177996445272588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_44
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2066a45e6f8659d0800000000000000
+      internalID: -2785881615452708820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_45
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692c2dd80d9742160800000000000000
+      internalID: 6999853657480151702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapcave_46
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 0
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11012197a1afa6d80800000000000000
+      internalID: -8256511975223062511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mapcave_0: 4934839030878517024
+      mapcave_1: 4752128087852475180
+      mapcave_10: 8734004182145006032
+      mapcave_11: 6312401390342007472
+      mapcave_12: 6411101143484871502
+      mapcave_13: 3099011807048801650
+      mapcave_14: -8486780355061531005
+      mapcave_15: 7662420194106725841
+      mapcave_16: 2303408614739272564
+      mapcave_17: 7989804603904578378
+      mapcave_18: 1682958280020848390
+      mapcave_19: -8877296935788728425
+      mapcave_2: -4815301216179849833
+      mapcave_20: 5878266105806344130
+      mapcave_21: 68861960770808690
+      mapcave_22: -5822943466845375181
+      mapcave_23: -7180294509499476964
+      mapcave_24: 6693012085224715442
+      mapcave_25: -4436129442736991463
+      mapcave_26: -4264529154631251100
+      mapcave_27: 5453128430476338858
+      mapcave_28: 3388803654055209146
+      mapcave_29: 1615349388517003323
+      mapcave_3: -6014179575808509885
+      mapcave_30: -1980568360465181405
+      mapcave_31: 3245895459683147405
+      mapcave_32: 4344487605083819679
+      mapcave_33: -7518484550444778972
+      mapcave_34: -4988321429037049572
+      mapcave_35: -955146326652210390
+      mapcave_36: 7434813819856934754
+      mapcave_37: -1563300618486890792
+      mapcave_38: -1756372420835511110
+      mapcave_39: -8917689547231393909
+      mapcave_4: -5695570385409715871
+      mapcave_40: 7771535250373556499
+      mapcave_41: 4987784522945220472
+      mapcave_42: -9163583927807506300
+      mapcave_43: -4758177996445272588
+      mapcave_44: -2785881615452708820
+      mapcave_45: 6999853657480151702
+      mapcave_46: -8256511975223062511
+      mapcave_5: 2337151320984001073
+      mapcave_6: 3956922976921938219
+      mapcave_7: -1003570296235605703
+      mapcave_8: -5839213765124058940
+      mapcave_9: 1894032879269511881
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
