@@ -1,6 +1,4 @@
 using System.Collections;
-using NUnit.Framework;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -11,8 +9,10 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D body2D;
 
     [SerializeField] LayerMask layerMaskGround;
+    [SerializeField] Animator player_animator;
+    [SerializeField] SpriteRenderer playerSprite;
 
-    private float rayCastSize = 0.8f;
+    private float rayCastSize = 1.5f;
     const Power POWERONE = global::Power.Dash;
     const Power POWERTWO = global::Power.FireArmor;
     const Power POWERNONE = global::Power.None;
@@ -22,8 +22,7 @@ public class PlayerController : MonoBehaviour
     private bool jump_press;
     private bool power_press;
     private bool isDashing;
-    private bool isFireArmor = false;
-    
+    private bool isFireArmor = false;    
 
     public float jumpForce = 10;
     public float dash_force = 20;
@@ -59,6 +58,16 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, rayCastSize , layerMaskGround);
+        player_animator.SetBool("isGrounded", isGrounded);
+        player_animator.SetBool("Run", (move_input.x == 0)? false : true);
+        if(move_input.x == -1)
+        {
+            playerSprite.flipX = true;
+        }
+        else
+        {
+            playerSprite.flipX = false;
+        }
 
     }
 
