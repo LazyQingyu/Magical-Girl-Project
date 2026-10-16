@@ -63,6 +63,10 @@ public class PlayerController : MonoBehaviour
         {
             Power();
         }
+        if(isFireArmor && powerSelected != POWERTWO)
+        {
+            ActivateFireArmor(false);
+        }
     }
 
     void JumpPerformed()
@@ -103,11 +107,14 @@ public class PlayerController : MonoBehaviour
     }
     void UseFireArmor()
     {
-        isFireArmor = !isFireArmor;
-        bool activeArmor = (!isFireArmor || powerSelected != POWERTWO)? false : true;
-        FireArmorStatus?.Invoke(activeArmor);
+        ActivateFireArmor(!isFireArmor);
     }
 
+    void ActivateFireArmor(bool status)
+    {
+        FireArmorStatus?.Invoke(status);
+        isFireArmor = status;
+    }
 
 
     void Power()
@@ -145,7 +152,8 @@ public class PlayerController : MonoBehaviour
         }
     }
     public void OnPowerOne()
-    {
+    {        
+        ActivateFireArmor(false);
         powerSelected = SelectPower(POWERONE);
 	}
     public void OnPowerTwo()
