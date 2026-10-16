@@ -1,4 +1,6 @@
 using System.Collections;
+using NUnit.Framework;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -102,7 +104,8 @@ public class PlayerController : MonoBehaviour
     void UseFireArmor()
     {
         isFireArmor = !isFireArmor;
-        FireArmorStatus?.Invoke(isFireArmor);
+        bool activeArmor = (!isFireArmor || powerSelected != POWERTWO)? false : true;
+        FireArmorStatus?.Invoke(activeArmor);
     }
 
 
