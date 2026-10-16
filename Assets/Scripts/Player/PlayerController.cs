@@ -1,4 +1,6 @@
 using System.Collections;
+using NUnit.Framework;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -8,16 +10,19 @@ public class PlayerController : MonoBehaviour
     PlayerInput playerInput;
     Rigidbody2D body2D;
 
+    [SerializeField] LayerMask layerMaskGround;
+
+    private float rayCastSize = 0.8f;
     const Power POWERONE = global::Power.Dash;
     const Power POWERTWO = global::Power.FireArmor;
     const Power POWERNONE = global::Power.None;
     private Vector2 move_input;
-    private Vector2 move_dir;
-    public bool isGround;
+
+    public bool isGrounded;
     private bool jump_press;
     private bool power_press;
-    private bool canDash;
     private bool isDashing;
+    private bool isFireArmor = false;
     
 
     public float jumpForce = 10;
@@ -30,9 +35,13 @@ public class PlayerController : MonoBehaviour
     Power powerSelected;
 
     public UnityEvent <Power> ActivePower;
+    public UnityEvent <bool> FireArmorStatus;
+    public UnityEvent HitByFire;
     void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
+
+        layerMaskGround = LayerMask.GetMask("Ground");
 
         if (playerInput == null)
         {
@@ -47,8 +56,16 @@ public class PlayerController : MonoBehaviour
         isDashing = false;
     }
 
+    void Update()
+    {
+        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, rayCastSize , layerMaskGround);
+
+    }
+
     void FixedUpdate()
     {
+        
+    
         if(isDashing)return;
         Move();
         JumpPerformed();
@@ -58,20 +75,24 @@ public class PlayerController : MonoBehaviour
         {
             Power();
         }
+        if(isFireArmor && powerSelected != POWERTWO)
+        {
+            ActivateFireArmor(false);
+        }
     }
 
     void JumpPerformed()
     {
-        if(isGround && jump_press)
+        if(isGrounded && jump_press)
         {
             body2D.AddForce(Vector3.up * jumpForce * 50);
-            isGround = false;
+            isGrounded = false;
         }
     }
 
     void Move()
     {
-        body2D.linearVelocityX = move_input.x * moveSpeed;  
+        body2D.linearVelocityX = move_input.x * moveSpeed;
     }
 
     void UseDash()
@@ -82,9 +103,8 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Dash()
     {
-        if (canDash && !isGround)
+        if (!isGrounded)
         {
-            canDash = false;
             isDashing = true;
             float originGravity = body2D.gravityScale;
             body2D.gravityScale = 0f;
@@ -98,15 +118,22 @@ public class PlayerController : MonoBehaviour
     }
     void UseFireArmor()
     {
-        Debug.Log("Fire Armor active");
+        ActivateFireArmor(!isFireArmor);
     }
+
+    void ActivateFireArmor(bool status)
+    {
+        FireArmorStatus?.Invoke(status);
+        isFireArmor = status;
+    }
+
 
     void Power()
     {
         power_press = false;
         switch(powerSelected)
         {
-            case POWERNONE :
+            case POWERONE :
                 UseDash();
                 break;
             case POWERTWO :
@@ -136,7 +163,8 @@ public class PlayerController : MonoBehaviour
         }
     }
     public void OnPowerOne()
-    {
+    {        
+        ActivateFireArmor(false);
         powerSelected = SelectPower(POWERONE);
 	}
     public void OnPowerTwo()
@@ -149,11 +177,16 @@ public class PlayerController : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Ground"))
-        { 
-            isGround = true;
-            canDash = true;
-        }      
+    
+
+        if (collision.CompareTag("Fire"))
+        {
+            if (!isFireArmor)
+            {
+                Debug.Log("I'm in Fire heheh");
+                HitByFire?.Invoke();
+            }
+        }
     }
 
 }
