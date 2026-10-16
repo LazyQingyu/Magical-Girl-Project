@@ -10,15 +10,17 @@ public class PlayerController : MonoBehaviour
     PlayerInput playerInput;
     Rigidbody2D body2D;
 
+    [SerializeField] LayerMask layerMaskGround;
+
+    private float rayCastSize = 0.8f;
     const Power POWERONE = global::Power.Dash;
     const Power POWERTWO = global::Power.FireArmor;
     const Power POWERNONE = global::Power.None;
     private Vector2 move_input;
-    private Vector2 move_dir;
-    public bool isGround;
+
+    public bool isGrounded;
     private bool jump_press;
     private bool power_press;
-    private bool canDash;
     private bool isDashing;
     private bool isFireArmor = false;
     
@@ -39,6 +41,8 @@ public class PlayerController : MonoBehaviour
     {
         playerInput = GetComponent<PlayerInput>();
 
+        layerMaskGround = LayerMask.GetMask("Ground");
+
         if (playerInput == null)
         {
             Debug.LogError("Missing an Player Input Component",this);
@@ -52,8 +56,16 @@ public class PlayerController : MonoBehaviour
         isDashing = false;
     }
 
+    void Update()
+    {
+        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, rayCastSize , layerMaskGround);
+
+    }
+
     void FixedUpdate()
     {
+        
+    
         if(isDashing)return;
         Move();
         JumpPerformed();
@@ -71,10 +83,10 @@ public class PlayerController : MonoBehaviour
 
     void JumpPerformed()
     {
-        if(isGround && jump_press)
+        if(isGrounded && jump_press)
         {
             body2D.AddForce(Vector3.up * jumpForce * 50);
-            isGround = false;
+            isGrounded = false;
         }
     }
 
@@ -91,9 +103,8 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Dash()
     {
-        if (canDash && !isGround)
+        if (!isGrounded)
         {
-            canDash = false;
             isDashing = true;
             float originGravity = body2D.gravityScale;
             body2D.gravityScale = 0f;
@@ -166,11 +177,7 @@ public class PlayerController : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Ground"))
-        { 
-            isGround = true;
-            canDash = true;
-        }
+    
 
         if (collision.CompareTag("Fire"))
         {

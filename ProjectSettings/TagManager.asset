@@ -19,6 +19,9 @@ TagManager:
   - DiamondBar
   - Ground
   - Fire
+  - Mur
+  - Sol
+  - Vie
   layers:
   - Default
   - TransparentFX
@@ -28,7 +31,7 @@ TagManager:
   - UI
   - Ground
   - Fire
-  - 
+  - Player
   - 
   - 
   - 
