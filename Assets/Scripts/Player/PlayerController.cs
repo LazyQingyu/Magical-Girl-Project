@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask layerMaskGround;
     [SerializeField] Animator player_animator;
     [SerializeField] SpriteRenderer playerSprite;
+    private PlayerAnim playerAnim;
 
     
     const Power POWERONE = global::Power.Dash;
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
     [Header("Unity Events")]
     public UnityEvent <Power> ActivePower;
     public UnityEvent <bool> FireArmorStatus;
+    public UnityEvent <bool> DashStatus;
   
     void Awake()
     {
@@ -54,6 +56,7 @@ public class PlayerController : MonoBehaviour
         InputSystem.actions.Disable();
         playerInput.currentActionMap?.Enable();
         body2D = GetComponent<Rigidbody2D>();
+        playerAnim = GetComponent<PlayerAnim>();
         powerSelected = global::Power.None;
         isDashing = false;
     }
@@ -122,6 +125,8 @@ public class PlayerController : MonoBehaviour
         if (!isGrounded)
         {
             isDashing = true;
+            DashStatus?.Invoke(true);
+            StartCoroutine(playerAnim.AfterImageFx());
             float originGravity = body2D.gravityScale;
             body2D.gravityScale = 0f;
             body2D.linearVelocityY = 0f;
@@ -129,6 +134,7 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForSeconds(dashingTime);
             body2D.gravityScale = originGravity;
             isDashing = false;
+            DashStatus?.Invoke(false);
         }
 
     }

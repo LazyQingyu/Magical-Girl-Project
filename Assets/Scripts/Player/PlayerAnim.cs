@@ -5,21 +5,62 @@ public class PlayerAnim : MonoBehaviour
 {
     
     private SpriteRenderer spriteRenderer;
+    public float afterImageLifeTime = 0.05f;
+    public float afterImageSpawnRate = 0.1f;
+    private bool dashStatus = false;
+    [SerializeField] private Gradient afterImageGradient;
     [SerializeField] private Animator playerAnimator;
 
     [Header("Fx")]
-    [SerializeField] private GameObject fireArmorParticles;  
+    [SerializeField] private GameObject fireArmorParticles;
+    [SerializeField] private GameObject dashParticles;
 
-    void Awake()
+    [Header("Materials")]
+    [SerializeField] private Material afterImageMaterial;
+
+    void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    public void DashFx()
+
+    public void SetDashStatus(bool status)
     {
-        Debug.Log("Dash Fx");
+        dashStatus = status;
+    }
+    public IEnumerator AfterImageFx()
+    {
+        dashParticles.SetActive(true);
+        while (dashStatus)
+        {
+            AfterImageTrail();
+            yield return new WaitForSeconds(afterImageSpawnRate);
+        }
+        dashParticles.SetActive(false);
+    }
+    void AfterImageTrail()
+    {
+        GameObject afterImage = new GameObject("AfterImage");
+        afterImage.transform.position = transform.position;
+        SpriteRenderer afterImageRenderer = afterImage.AddComponent<SpriteRenderer>();
+        afterImageRenderer.sprite = spriteRenderer.sprite;
+        afterImageRenderer.transform.localScale = spriteRenderer.transform.localScale;
+        afterImageRenderer.material = afterImageMaterial;
+        StartCoroutine(LerpColor(afterImageRenderer));
     }
 
-    public IEnumerator DeathFx()
+    IEnumerator LerpColor(SpriteRenderer spriteRenderer)
+    {
+        float timer = 0f;
+        while (timer < afterImageLifeTime)
+        {
+            timer += Time.deltaTime;
+            spriteRenderer.color = afterImageGradient.Evaluate(timer / afterImageLifeTime);
+            yield return null;
+        }
+        spriteRenderer.color = afterImageGradient.Evaluate(1f);
+        Destroy(spriteRenderer.gameObject,0.3f);
+    }
+    public IEnumerator HitFx()
     {
         playerAnimator.SetTrigger("isRespawn");
         for(int i = 0; i < 4; i++)

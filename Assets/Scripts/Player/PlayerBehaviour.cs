@@ -30,7 +30,7 @@ public class PlayerBehaviour : MonoBehaviour
         DeathAccurate?.Invoke();
         playerController.FreezePlayerInput(true);
         RepositionPlayer(checkPoint);
-        yield return StartCoroutine(playerAnim.DeathFx());
+        yield return StartCoroutine(playerAnim.HitFx());
         playerController.FreezePlayerInput(false);
     }
     void DamageByFireZone()
