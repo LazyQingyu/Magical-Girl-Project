@@ -1,0 +1,1035 @@
+fileFormatVersion: 2
+guid: 70c16fa675c9bcdc4ae2c0cb3bbfacd6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7718303137638191513
+    second: atlas_50g_0
+  - first:
+      213: -9016756535577449251
+    second: atlas_50g_1
+  - first:
+      213: 2565615606223191439
+    second: atlas_50g_2
+  - first:
+      213: 2959119347093038456
+    second: atlas_50g_3
+  - first:
+      213: 1139530262841014760
+    second: atlas_50g_4
+  - first:
+      213: -9197199210344814333
+    second: atlas_50g_5
+  - first:
+      213: 7509565937573232215
+    second: atlas_50g_6
+  - first:
+      213: -5444980110319347111
+    second: atlas_50g_7
+  - first:
+      213: 881170178693669958
+    second: atlas_50g_8
+  - first:
+      213: 1450335980597776956
+    second: atlas_50g_9
+  - first:
+      213: -791403575186003092
+    second: atlas_50g_10
+  - first:
+      213: -8865849515522746860
+    second: atlas_50g_11
+  - first:
+      213: -371481199591036385
+    second: atlas_50g_12
+  - first:
+      213: -4875133824435789045
+    second: atlas_50g_13
+  - first:
+      213: -714362562031594353
+    second: atlas_50g_14
+  - first:
+      213: -1600403610416295262
+    second: atlas_50g_15
+  - first:
+      213: 6068262079662797762
+    second: atlas_50g_16
+  - first:
+      213: 6969245756400299295
+    second: atlas_50g_17
+  - first:
+      213: -6205004363900876101
+    second: atlas_50g_18
+  - first:
+      213: 8956455616055303124
+    second: atlas_50g_19
+  - first:
+      213: -1198954378790144737
+    second: atlas_50g_20
+  - first:
+      213: -2054395421338641782
+    second: atlas_50g_21
+  - first:
+      213: 437080411118424693
+    second: atlas_50g_22
+  - first:
+      213: 7313995237814621612
+    second: atlas_50g_23
+  - first:
+      213: 7988605874892551848
+    second: atlas_50g_24
+  - first:
+      213: 1681071902865449166
+    second: atlas_50g_25
+  - first:
+      213: -2600893042450258582
+    second: atlas_50g_26
+  - first:
+      213: 7566592209322608845
+    second: atlas_50g_27
+  - first:
+      213: -4926726552676152777
+    second: atlas_50g_28
+  - first:
+      213: 6817930721983446770
+    second: atlas_50g_29
+  - first:
+      213: -4926528150670471401
+    second: atlas_50g_30
+  - first:
+      213: -9082939035581138232
+    second: atlas_50g_31
+  - first:
+      213: 3269924901552845668
+    second: atlas_50g_32
+  - first:
+      213: -3670164793221360060
+    second: atlas_50g_33
+  - first:
+      213: -5461870406268145943
+    second: atlas_50g_34
+  - first:
+      213: -5965697725525745048
+    second: atlas_50g_35
+  - first:
+      213: 6843082891600901349
+    second: atlas_50g_36
+  - first:
+      213: -3433709221175456602
+    second: atlas_50g_37
+  - first:
+      213: 140032930422365870
+    second: atlas_50g_38
+  - first:
+      213: -3237807098705456688
+    second: atlas_50g_39
+  - first:
+      213: 9047454479526146690
+    second: atlas_50g_40
+  - first:
+      213: -7505290603630732716
+    second: atlas_50g_41
+  - first:
+      213: 8939986248655316039
+    second: atlas_50g_42
+  - first:
+      213: 717531847330928482
+    second: atlas_50g_43
+  - first:
+      213: -5790796842693192607
+    second: atlas_50g_44
+  - first:
+      213: 2400906258102427523
+    second: atlas_50g_45
+  - first:
+      213: -4796696109969094800
+    second: atlas_50g_46
+  - first:
+      213: -7158003209163252488
+    second: atlas_50g_47
+  - first:
+      213: 2453479978263186313
+    second: atlas_50g_48
+  - first:
+      213: 5788363067121530894
+    second: atlas_50g_49
+  - first:
+      213: 3286702288800699536
+    second: atlas_50g_50
+  - first:
+      213: 6802952338934135221
+    second: atlas_50g_51
+  - first:
+      213: -5945080383180667904
+    second: atlas_50g_52
+  - first:
+      213: 4434164346318842905
+    second: atlas_50g_53
+  - first:
+      213: -8929084232068467243
+    second: atlas_50g_54
+  - first:
+      213: 2066609659575349443
+    second: atlas_50g_55
+  - first:
+      213: 7828523167257074571
+    second: atlas_50g_56
+  - first:
+      213: 2138537332131220449
+    second: atlas_50g_57
+  - first:
+      213: 9017892439797784447
+    second: atlas_50g_58
+  - first:
+      213: -8394994287382285546
+    second: atlas_50g_59
+  - first:
+      213: 6582839649151042673
+    second: atlas_50g_60
+  - first:
+      213: 8444453087109776655
+    second: atlas_50g_61
+  - first:
+      213: 4329070023857212602
+    second: atlas_50g_62
+  - first:
+      213: -5275385953541156229
+    second: atlas_50g_63
+  - first:
+      213: -3400889283653643257
+    second: atlas_50g_64
+  - first:
+      213: -8340849662841840294
+    second: atlas_50g_65
+  - first:
+      213: -1590676566466194647
+    second: atlas_50g_66
+  - first:
+      213: 5786886306308254074
+    second: atlas_50g_67
+  - first:
+      213: 4738007100767397286
+    second: atlas_50g_68
+  - first:
+      213: -1477710577130860602
+    second: atlas_50g_69
+  - first:
+      213: -872479341095339341
+    second: atlas_50g_70
+  - first:
+      213: 370864842498957755
+    second: atlas_50g_71
+  - first:
+      213: 8965100790887541946
+    second: atlas_50g_72
+  - first:
+      213: 4552588230534297056
+    second: atlas_50g_73
+  - first:
+      213: -2125165824707133259
+    second: atlas_50g_74
+  - first:
+      213: -4275023269791815231
+    second: atlas_50g_75
+  - first:
+      213: -8798170853041844267
+    second: atlas_50g_76
+  - first:
+      213: 9202984577902982665
+    second: atlas_50g_77
+  - first:
+      213: -4400471134235554068
+    second: atlas_50g_78
+  - first:
+      213: 9090746075801581896
+    second: atlas_50g_79
+  - first:
+      213: 6733383615302294390
+    second: atlas_50g_80
+  - first:
+      213: -4547745865908400399
+    second: atlas_50g_81
+  - first:
+      213: 9120070445242344124
+    second: atlas_50g_82
+  - first:
+      213: -6973856584314877719
+    second: atlas_50g_83
+  - first:
+      213: 8393963782004072626
+    second: atlas_50g_84
+  - first:
+      213: 8540833569281844443
+    second: atlas_50g_85
+  - first:
+      213: -3009836326663529439
+    second: atlas_50g_86
+  - first:
+      213: 3839688342269114481
+    second: atlas_50g_87
+  - first:
+      213: 1918298521176125772
+    second: atlas_50g_88
+  - first:
+      213: 5512746712175411521
+    second: atlas_50g_89
+  - first:
+      213: 2996758822118347037
+    second: atlas_50g_90
+  - first:
+      213: 1631232241647018001
+    second: atlas_50g_91
+  - first:
+      213: -488734800623029213
+    second: atlas_50g_92
+  - first:
+      213: 2280566739428120848
+    second: atlas_50g_93
+  - first:
+      213: -3207353717206039630
+    second: atlas_50g_94
+  - first:
+      213: 3691347163648432631
+    second: atlas_50g_95
+  - first:
+      213: -2429630061102137293
+    second: atlas_50g_96
+  - first:
+      213: 7734789975181499055
+    second: atlas_50g_97
+  - first:
+      213: -7535026703643542671
+    second: atlas_50g_98
+  - first:
+      213: 2856779394685433291
+    second: atlas_50g_99
+  - first:
+      213: 7591993165478582473
+    second: atlas_50g_100
+  - first:
+      213: -7352536107013147133
+    second: atlas_50g_101
+  - first:
+      213: -653524437948197464
+    second: atlas_50g_102
+  - first:
+      213: 5837993516705584755
+    second: atlas_50g_103
+  - first:
+      213: -4773984961094418127
+    second: atlas_50g_104
+  - first:
+      213: -6251785765408901375
+    second: atlas_50g_105
+  - first:
+      213: 621253127816401209
+    second: atlas_50g_106
+  - first:
+      213: 6760078710161743277
+    second: atlas_50g_107
+  - first:
+      213: 2684654036389982625
+    second: atlas_50g_108
+  - first:
+      213: 3742805214833940165
+    second: atlas_50g_109
+  - first:
+      213: 6627959896686075109
+    second: atlas_50g_110
+  - first:
+      213: 93662037468035246
+    second: atlas_50g_111
+  - first:
+      213: 7953452055470110592
+    second: atlas_50g_112
+  - first:
+      213: 4578766465020339585
+    second: atlas_50g_113
+  - first:
+      213: 636768938419918892
+    second: atlas_50g_114
+  - first:
+      213: -1777597747087709524
+    second: atlas_50g_115
+  - first:
+      213: -9155144222019015965
+    second: atlas_50g_116
+  - first:
+      213: 8063644114923706919
+    second: atlas_50g_117
+  - first:
+      213: 4208340129747939289
+    second: atlas_50g_118
+  - first:
+      213: 1162178461351154795
+    second: atlas_50g_119
+  - first:
+      213: 5005626113905913470
+    second: atlas_50g_120
+  - first:
+      213: 2289984106429215926
+    second: atlas_50g_121
+  - first:
+      213: -5836596836510699449
+    second: atlas_50g_122
+  - first:
+      213: -682938311184984641
+    second: atlas_50g_123
+  - first:
+      213: -8188045374804777196
+    second: atlas_50g_124
+  - first:
+      213: -5637293791473482380
+    second: atlas_50g_125
+  - first:
+      213: 1783270876418668250
+    second: atlas_50g_126
+  - first:
+      213: -5398888340224731297
+    second: atlas_50g_127
+  - first:
+      213: 6076851910034600981
+    second: atlas_50g_128
+  - first:
+      213: -3624339279328043733
+    second: atlas_50g_129
+  - first:
+      213: 5658465138188987234
+    second: atlas_50g_130
+  - first:
+      213: -4239706266581540501
+    second: atlas_50g_131
+  - first:
+      213: -5278711617692417793
+    second: atlas_50g_132
+  - first:
+      213: -6107976184171190522
+    second: atlas_50g_133
+  - first:
+      213: -8526098329788999480
+    second: atlas_50g_134
+  - first:
+      213: 1175901365692643995
+    second: atlas_50g_135
+  - first:
+      213: -6439519660959620290
+    second: atlas_50g_136
+  - first:
+      213: 3012139739535494303
+    second: atlas_50g_137
+  - first:
+      213: -8474137199511521485
+    second: atlas_50g_138
+  - first:
+      213: 7869353353326269182
+    second: atlas_50g_139
+  - first:
+      213: -8007262479292130252
+    second: atlas_50g_140
+  - first:
+      213: 7928866196050583078
+    second: atlas_50g_141
+  - first:
+      213: 6537591324378562350
+    second: atlas_50g_142
+  - first:
+      213: 728874392529747233
+    second: atlas_50g_143
+  - first:
+      213: 1953210991101611919
+    second: atlas_50g_144
+  - first:
+      213: 1275059377291279714
+    second: atlas_50g_145
+  - first:
+      213: 8986205523774906692
+    second: atlas_50g_146
+  - first:
+      213: -3206888653638779356
+    second: atlas_50g_147
+  - first:
+      213: -3368480621119814811
+    second: atlas_50g_148
+  - first:
+      213: -7627131848238224478
+    second: atlas_50g_149
+  - first:
+      213: 1779715363834191366
+    second: atlas_50g_150
+  - first:
+      213: -2450414686600252010
+    second: atlas_50g_151
+  - first:
+      213: 180136594918767413
+    second: atlas_50g_152
+  - first:
+      213: 4290862975597437651
+    second: atlas_50g_153
+  - first:
+      213: 5772343344750452218
+    second: atlas_50g_154
+  - first:
+      213: -3998606323092138970
+    second: atlas_50g_155
+  - first:
+      213: 6894475474508530017
+    second: atlas_50g_156
+  - first:
+      213: -6884665448899235290
+    second: atlas_50g_157
+  - first:
+      213: -7472829915755355327
+    second: atlas_50g_158
+  - first:
+      213: 3944651858794491951
+    second: atlas_50g_159
+  - first:
+      213: -3995628602203835628
+    second: atlas_50g_160
+  - first:
+      213: -5502428615453752958
+    second: atlas_50g_161
+  - first:
+      213: 7968394832800477075
+    second: atlas_50g_162
+  - first:
+      213: 6173817878317177667
+    second: atlas_50g_163
+  - first:
+      213: 6144477767710469653
+    second: atlas_50g_164
+  - first:
+      213: -6208831995052566566
+    second: atlas_50g_165
+  - first:
+      213: -396194306575931295
+    second: atlas_50g_166
+  - first:
+      213: -956482518904299962
+    second: atlas_50g_167
+  - first:
+      213: -8609032547666778595
+    second: atlas_50g_168
+  - first:
+      213: -2673993815799550801
+    second: atlas_50g_169
+  - first:
+      213: 5146298891398833805
+    second: atlas_50g_170
+  - first:
+      213: 4834162957291787805
+    second: atlas_50g_171
+  - first:
+      213: 5906540128177789125
+    second: atlas_50g_172
+  - first:
+      213: 1149704818489626916
+    second: atlas_50g_173
+  - first:
+      213: 439909205522286314
+    second: atlas_50g_174
+  - first:
+      213: -1830394939956877519
+    second: atlas_50g_175
+  - first:
+      213: 6850210911554369815
+    second: atlas_50g_176
+  - first:
+      213: -1828378471192696879
+    second: atlas_50g_177
+  - first:
+      213: 5146488827523564483
+    second: atlas_50g_178
+  - first:
+      213: -518630348185398118
+    second: atlas_50g_179
+  - first:
+      213: 1276588591318711400
+    second: atlas_50g_180
+  - first:
+      213: -5645777376185573195
+    second: atlas_50g_181
+  - first:
+      213: 6397994702827679040
+    second: atlas_50g_182
+  - first:
+      213: -570872317297456167
+    second: atlas_50g_183
+  - first:
+      213: -6844984832860622254
+    second: atlas_50g_184
+  - first:
+      213: -2678832500035481378
+    second: atlas_50g_185
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: atlas_50g_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99115b37fcbec1b60800000000000000
+      internalID: 7718303137638191513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc69b624bb0ed280800000000000000
+      internalID: -9016756535577449251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8db127fcc5ea9320800000000000000
+      internalID: 2565615606223191439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_3
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 875677b3e57e01920800000000000000
+      internalID: 2959119347093038456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9327f8cbc60df00800000000000000
+      internalID: 1139530262841014760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_5
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309e4ea0c0cfc5080800000000000000
+      internalID: -9197199210344814333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_6
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75efc6ece66573860800000000000000
+      internalID: 7509565937573232215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_7
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a195b307b8f64b0800000000000000
+      internalID: -5444980110319347111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64424bfdb9b8a3c00800000000000000
+      internalID: 881170178693669958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_9
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c329f70e3e0a02410800000000000000
+      internalID: 1450335980597776956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_10
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b601334ae5405f0800000000000000
+      internalID: -791403575186003092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_11
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4169233c6dc26f480800000000000000
+      internalID: -8865849515522746860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ae3a131db38daf0800000000000000
+      internalID: -371481199591036385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_13
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b036302cd9b085cb0800000000000000
+      internalID: -4875133824435789045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_50g_14
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f84d441e8031616f0800000000000000
+      internalID: -714362562031594353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0ee3f0f08d4a425a3aa176fd7dab21f2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":1024.0,"y":1024.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      atlas_50g_0: 7718303137638191513
+      atlas_50g_1: -9016756535577449251
+      atlas_50g_10: -791403575186003092
+      atlas_50g_11: -8865849515522746860
+      atlas_50g_12: -371481199591036385
+      atlas_50g_13: -4875133824435789045
+      atlas_50g_14: -714362562031594353
+      atlas_50g_2: 2565615606223191439
+      atlas_50g_3: 2959119347093038456
+      atlas_50g_4: 1139530262841014760
+      atlas_50g_5: -9197199210344814333
+      atlas_50g_6: 7509565937573232215
+      atlas_50g_7: -5444980110319347111
+      atlas_50g_8: 881170178693669958
+      atlas_50g_9: 1450335980597776956
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
