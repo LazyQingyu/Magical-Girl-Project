@@ -11,14 +11,17 @@ public class PlayerBehaviour : MonoBehaviour
 
     private PlayerAnim playerAnim;
     public PlayerController playerController;
-    public UnityEvent HitByFire;
-    public UnityEvent DeathOccurs;
-
+    public UnityEvent TakeDamage;
     void Awake()
     {
         startPosition = transform.position;
         checkPoint = startPosition;
         playerAnim = GetComponent<PlayerAnim>();
+    }
+
+    void Start()
+    {
+        GameManagerBehaviour.instance.OnStartGame(startPosition);
     }
 
     void Dead()
@@ -27,20 +30,23 @@ public class PlayerBehaviour : MonoBehaviour
     }
     IEnumerator DeathSequence()
     {
-        DeathOccurs?.Invoke();
+        TakeDamage?.Invoke();
+        GameManagerBehaviour.instance.OnPlayerDeath();
         playerController.FreezePlayerInput(true);
         RepositionPlayer(checkPoint);
         yield return StartCoroutine(playerAnim.HitFx());
         playerController.FreezePlayerInput(false);
     }
+    
     void DamageByFireZone()
     {
         if (!isFireArmorActive)
         {
-            HitByFire?.Invoke();
+            TakeDamage?.Invoke();
+            GameManagerBehaviour.instance.OnFireZoneHit();
         }
     }
-    void RepositionPlayer(Vector2 newPosition)
+    public void RepositionPlayer(Vector2 newPosition)
     {
         transform.position = newPosition;
     }
