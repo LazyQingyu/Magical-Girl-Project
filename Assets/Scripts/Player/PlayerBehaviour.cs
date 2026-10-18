@@ -23,9 +23,9 @@ public class PlayerBehaviour : MonoBehaviour
 
     void Dead()
     {
-        StartCoroutine(Die());
+        StartCoroutine(DeathSequence());
     }
-    IEnumerator Die()
+    IEnumerator DeathSequence()
     {
         DeathOccurs?.Invoke();
         playerController.FreezePlayerInput(true);
