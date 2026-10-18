@@ -12,7 +12,7 @@ public class PlayerBehaviour : MonoBehaviour
     private PlayerAnim playerAnim;
     public PlayerController playerController;
     public UnityEvent HitByFire;
-    public UnityEvent DeathAccurate;
+    public UnityEvent DeathOccurs;
 
     void Awake()
     {
@@ -27,7 +27,7 @@ public class PlayerBehaviour : MonoBehaviour
     }
     IEnumerator Die()
     {
-        DeathAccurate?.Invoke();
+        DeathOccurs?.Invoke();
         playerController.FreezePlayerInput(true);
         RepositionPlayer(checkPoint);
         yield return StartCoroutine(playerAnim.HitFx());
