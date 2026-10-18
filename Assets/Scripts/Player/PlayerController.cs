@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Animator player_animator;
     [SerializeField] SpriteRenderer playerSprite;
 
-    private float rayCastSize = 1.5f;
+    
     const Power POWERONE = global::Power.Dash;
     const Power POWERTWO = global::Power.FireArmor;
     const Power POWERNONE = global::Power.None;
@@ -27,15 +27,18 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 10;
     public float dash_force = 20;
     public float dashingTime = 0.2f;
+    private float rayCastSize = 1.5f;
+
     
     [SerializeField]
     private float moveSpeed = 5;
 
     Power powerSelected;
 
+    [Header("Unity Events")]
     public UnityEvent <Power> ActivePower;
     public UnityEvent <bool> FireArmorStatus;
-    public UnityEvent HitByFire;
+  
     void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -63,6 +66,10 @@ public class PlayerController : MonoBehaviour
         FlipPlayer();
     }
 
+    public void FreezePlayerInput(bool freeze)
+    {
+        playerInput.enabled = !freeze;
+    }
     void FlipPlayer()
     {
         if (move_input.x < 0)
@@ -76,8 +83,6 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        
-    
         if(isDashing)return;
         Move();
         JumpPerformed();
@@ -109,7 +114,6 @@ public class PlayerController : MonoBehaviour
 
     void UseDash()
     {   
-
         StartCoroutine(Dash());
     }
 
@@ -186,19 +190,6 @@ public class PlayerController : MonoBehaviour
     public void OnUsePower()
     {
         power_press = true;
-    }
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-    
-
-        if (collision.CompareTag("Fire"))
-        {
-            if (!isFireArmor)
-            {
-                Debug.Log("I'm in Fire heheh");
-                HitByFire?.Invoke();
-            }
-        }
     }
 
 }
