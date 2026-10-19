@@ -21,9 +21,17 @@ public class VieJoueur : MonoBehaviour
 	public void UpdateHUDLife()
 	{	
 		vies = GameManagerBehaviour.instance.lifes;
-		for(int i = 0; i < vies; i ++)
+		for(int i = 0; i < 3; i ++)
 		{
-			coeurs.transform.GetChild(vies-i).gameObject.SetActive(false);
+			if(i< vies-1)
+			{
+				coeurs.transform.GetChild(i).gameObject.SetActive(true);
+			}
+			else
+			{
+				coeurs.transform.GetChild(i).gameObject.SetActive(false);
+			}
+			
 		}
 	}
 
