@@ -287,11 +287,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &204605382 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1511849138177265706, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
-  m_PrefabInstance: {fileID: 8998649407265143740}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &349221267
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,16 +318,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &585258642 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8572649945973204243, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
-  m_PrefabInstance: {fileID: 8998649407265143740}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &599096120 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4502937433667370043, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
-  m_PrefabInstance: {fileID: 8998649407265143740}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &743664259
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,11 +349,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &765827120 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 48599485518741252, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
-  m_PrefabInstance: {fileID: 8998649407265143740}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1116019323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,38 +1033,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6267366873886715413, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
-      propertyPath: armureDeFeuUp
-      value: 
-      objectReference: {fileID: 599096120}
-    - target: {fileID: 6267366873886715413, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
-      propertyPath: pouvoirDashUp
-      value: 
-      objectReference: {fileID: 204605382}
-    - target: {fileID: 6267366873886715413, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
-      propertyPath: armureDeFeuDown
-      value: 
-      objectReference: {fileID: 765827120}
-    - target: {fileID: 6267366873886715413, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
-      propertyPath: pouvoirDashDown
-      value: 
-      objectReference: {fileID: 585258642}
-    - target: {fileID: 7118496525540317727, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
-      propertyPath: armureDeFeuUp
-      value: 
-      objectReference: {fileID: 599096120}
-    - target: {fileID: 7118496525540317727, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
-      propertyPath: pouvoirDashUp
-      value: 
-      objectReference: {fileID: 204605382}
-    - target: {fileID: 7118496525540317727, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
-      propertyPath: armureDeFeuDown
-      value: 
-      objectReference: {fileID: 765827120}
-    - target: {fileID: 7118496525540317727, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
-      propertyPath: pouvoirDashDown
-      value: 
-      objectReference: {fileID: 585258642}
     - target: {fileID: 7166360323493929138, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
       propertyPath: m_Name
       value: Player

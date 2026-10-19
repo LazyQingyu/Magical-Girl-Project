@@ -11,7 +11,6 @@ public class VieJoueur : MonoBehaviour
 {
 
 	public GameObject coeurs;
-	public GameManagerBehaviour vie;
 	int vies;
 
     void Start()
