@@ -7,8 +7,8 @@ public class PowerManager : MonoBehaviour
 	public GameObject armureDeFeuDown;
 	public GameObject pouvoirDashUp;
 	public GameObject armureDeFeuUp;
-	public TextMeshProUGUI textSortDash;
-	public TextMeshProUGUI textSortArmor;
+	public TextMeshProUGUI textDash;
+	public TextMeshProUGUI textArmor;
 	private bool state = false;
 	
     void Start()
@@ -33,8 +33,8 @@ public class PowerManager : MonoBehaviour
 				pouvoirDashUp.gameObject.SetActive(!state);
 				armureDeFeuDown.gameObject.SetActive(!state);
 				armureDeFeuUp.gameObject.SetActive(state);
-				textSortDash.text = "R";		
-				textSortArmor.text = "E";
+				textDash.text = "R";		
+				textArmor.text = "E";
 			break;
 			
 			case Power.FireArmor:
@@ -44,8 +44,8 @@ public class PowerManager : MonoBehaviour
 				pouvoirDashUp.gameObject.SetActive(state);
 				armureDeFeuDown.gameObject.SetActive(state);
 				armureDeFeuUp.gameObject.SetActive(!state);
-				textSortDash.text = "A";
-				textSortArmor.text = "R";
+				textDash.text = "A";
+				textArmor.text = "R";
 
 			break;
 			
@@ -55,31 +55,11 @@ public class PowerManager : MonoBehaviour
 				pouvoirDashUp.gameObject.SetActive(state);
 				armureDeFeuDown.gameObject.SetActive(!state);
 				armureDeFeuUp.gameObject.SetActive(state);
-				textSortDash.text = "A";
-				textSortArmor.text = "E";
+				textDash.text = "A";
+				textArmor.text = "E";
 			break;
 		}
-		/*
-		if(sort == Dash || sort == FireArmor){
-			textSort.text = "R";
-		}
-		*/
-		/*
-		if(sort != null){
-			//Debug.Log("ok");
-			textSortDash.text = "A";
-			textSortArmor.text = "E";
-		}
-		*/
-		/*
-				if(armureDeFeuDown.gameObject.SetActive == !state && armureDeFeuUp.gameObject.SetActive == state){
-					textSortArmor.text = "E";
-				}
-		
-				if(pouvoirDashDown.gameObject.SetActive == !state && pouvoirDashUp.gameObject.SetActive == state){
-					textSortDash.text = "A";
-				}
-				*/
+
 	}
 }
 

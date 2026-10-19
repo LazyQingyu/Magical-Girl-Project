@@ -34,7 +34,7 @@ public class PowerManager : MonoBehaviour
 				armureDeFeuDown.gameObject.SetActive(!state);
 				armureDeFeuUp.gameObject.SetActive(state);
 				textSortDash.text = "R";		
-				textSortArmor.text = "A";
+				textSortArmor.text = "E";
 			break;
 			
 			case Power.FireArmor:
