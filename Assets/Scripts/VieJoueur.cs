@@ -25,7 +25,7 @@ public class VieJoueur : MonoBehaviour
 		Debug.Log("vies in hud update : "+vies);
 		for(int i = 0; i < vies; i++)
 		{
-			coeurs.transform.GetChild(i).gameObject.SetActive(false);
+			coeurs.transform.GetChild(vies-i).gameObject.SetActive(false);
 		}
 	}
 
