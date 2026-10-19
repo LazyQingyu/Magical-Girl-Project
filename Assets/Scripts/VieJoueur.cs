@@ -11,12 +11,12 @@ public class VieJoueur : MonoBehaviour
 {
 
 	public GameObject coeurs;
-	public GameManager vie;
+	public GameManagerBehaviour vie;
 	int vies;
 
     void Start()
     {
-		 vies = GameManager.lifeJoueur = 3;
+		 vies = GameManagerBehavior.lifes;
 		
     }
 
@@ -30,10 +30,10 @@ public class VieJoueur : MonoBehaviour
 			Destroy(collision.gameObject);
 			if(vies > 0 && vies < 3){
 				coeurs.transform.GetChild(vies).gameObject.SetActive(true);
-				vies += 1;
+				//vies += 1;
 				//SaveLife.lifeJoueur += 1;
 				//Debug.Log(SaveLife.lifeJoueur);
-				UpdateLife(vies);
+				UpdateLife(1);
 			}
 		}
 
@@ -52,7 +52,7 @@ public class VieJoueur : MonoBehaviour
 
 	}
 void UpdateLife(int life){
-	GameManager.lifeJoueur = life;
+	GameManagerBehaviour.instance.OnLifeChange(life);
 }
 	
 }

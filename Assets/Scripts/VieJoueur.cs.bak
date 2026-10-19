@@ -11,12 +11,12 @@ public class VieJoueur : MonoBehaviour
 {
 
 	public GameObject coeurs;
-	public GameManager vie;
+	public GameManagerBehaviour vie;
 	int vies;
 
     void Start()
     {
-		 vies = GameManager.lifeJoueur = 3;
+		 vies = GameManagerBehavior.lifes;
 		
     }
 
@@ -33,12 +33,14 @@ public class VieJoueur : MonoBehaviour
 				vies += 1;
 				//SaveLife.lifeJoueur += 1;
 				//Debug.Log(SaveLife.lifeJoueur);
+				UpdateLife(vies);
 			}
 		}
 
 		if(collision.gameObject.CompareTag("Bombe")){
 				Destroy(collision.gameObject);
 				vies -= 1;
+				UpdateLife(vies);
 				//SaveLife.lifeJoueur -= 1;
 				//Debug.Log(SaveLife.lifeJoueur);
 				coeurs.transform.GetChild(vies).gameObject.SetActive(false);
@@ -49,6 +51,8 @@ public class VieJoueur : MonoBehaviour
 		}
 
 	}
-
+void UpdateLife(int life){
+	GameManagerBehaviour.instance.OnLifeChange(life);
+}
 	
 }

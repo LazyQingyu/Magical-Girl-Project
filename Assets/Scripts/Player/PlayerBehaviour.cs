@@ -36,7 +36,7 @@ public class PlayerBehaviour : MonoBehaviour
         GameManagerBehaviour.instance.OnPlayerDeath();
         playerController.FreezePlayerInput(true);
         RepositionPlayer(checkPoint);
-        yield return StartCoroutine(playerAnim.HitFx());
+        yield return playerAnim.DeathFx();
         playerController.FreezePlayerInput(false);
     }
     // This method update the player life in the GameManager when the player takes damage from a fire zone, if the player has fire armor active he will not take damage
@@ -44,6 +44,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (!isFireArmorActive)
         {
+            playerAnim.HitFx();
             TakeDamage?.Invoke();
             GameManagerBehaviour.instance.OnFireZoneHit();
         }
@@ -69,7 +70,6 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (collision.CompareTag("CheckPoint"))
         {
-            Debug.Log("Checkpoint reached");
             checkPoint = collision.transform.position;
         }
 

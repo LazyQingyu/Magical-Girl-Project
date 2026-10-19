@@ -20,7 +20,11 @@ public class ActionsButtonsPauseGame : MonoBehaviour
 	public Button buttonRejouer;
 	public Button buttonQuitter;
 	public GameObject backgroundGame;
-	
+	public GameObject PouvoirDashDown;
+	public GameObject PouvoirDashUp;
+	public GameObject ArmureDeFeuDown;
+	public GameObject ArmureDeFeuUp;
+
     void Start()
     {
 		
@@ -91,11 +95,12 @@ public class ActionsButtonsPauseGame : MonoBehaviour
         if(backgroundGame != null){
 			backgroundGame.gameObject.SetActive(false);
 		}
+		
 	}
 	
 	public void Rejouer()
 	{
-		SceneManager.LoadScene("Base Level");
+		SceneManager.LoadScene("Level-1");
 	}
 	
 	public void Quitter()
