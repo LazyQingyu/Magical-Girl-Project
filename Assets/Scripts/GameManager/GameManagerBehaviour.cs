@@ -59,9 +59,9 @@ public class GameManagerBehaviour : MonoBehaviour
         OnLifeChange(1);
     }
 
-    public void EndGoalReached()
+    public void GoalReached(string goalName)
     {
-        SceneManager.LoadScene("EndGame");
+        SceneManager.LoadScene(goalName);
     }
     // This method checks if the player has no more lifes and resets the player position to the start position and resets the player lifes to base value
     void GameOver()
