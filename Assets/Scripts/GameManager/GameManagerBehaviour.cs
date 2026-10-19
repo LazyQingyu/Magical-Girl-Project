@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManagerBehaviour : MonoBehaviour
 {
@@ -48,7 +49,7 @@ public class GameManagerBehaviour : MonoBehaviour
     {
         OnLifeChange(fireZoneDamage);
     }
-    public void OnLifeChange(int damage)
+    void OnLifeChange(int damage)
     {
         lifes = Mathf.Clamp(lifes+damage, 0, MAX_LIFES);
     }
@@ -59,9 +60,9 @@ public class GameManagerBehaviour : MonoBehaviour
     {
         if (lifes <= 0)
         {
-            GetComponent<PlayerBehaviour>().RepositionPlayer(startPosition);
+            SceneManager.LoadScene("EndGame");
         }
-        lifes = BASE_LIFES;
+
     }
     void Update()
     {
