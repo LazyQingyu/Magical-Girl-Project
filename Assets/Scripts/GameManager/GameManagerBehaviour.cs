@@ -8,7 +8,7 @@ public class GameManagerBehaviour : MonoBehaviour
 
     const int MAX_LIFES = 5;
     const int BASE_LIFES = 3;
-    private int lifes;
+    public int lifes;
     
     private Vector2 startPosition;
 
@@ -48,10 +48,11 @@ public class GameManagerBehaviour : MonoBehaviour
     {
         OnLifeChange(fireZoneDamage);
     }
-    void OnLifeChange(int damage)
+    public void OnLifeChange(int damage)
     {
         lifes = Mathf.Clamp(lifes+damage, 0, MAX_LIFES);
     }
+
 
     // This method checks if the player has no more lifes and resets the player position to the start position and resets the player lifes to base value
     void GameOver()
