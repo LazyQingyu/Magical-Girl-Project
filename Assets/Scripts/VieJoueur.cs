@@ -16,7 +16,7 @@ public class VieJoueur : MonoBehaviour
 
     void Start()
     {
-		 vies = GameManagerBehavior.lifes;
+		 vies = GameManagerBehaviour.instance.lifes;
 		
     }
 
@@ -54,5 +54,5 @@ public class VieJoueur : MonoBehaviour
 void UpdateLife(int life){
 	GameManagerBehaviour.instance.OnLifeChange(life);
 }
-	
+
 }
