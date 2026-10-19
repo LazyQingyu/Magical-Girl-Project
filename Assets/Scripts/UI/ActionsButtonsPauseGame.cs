@@ -105,6 +105,7 @@ public class ActionsButtonsPauseGame : MonoBehaviour
 	
 	public void Rejouer()
 	{
+		Time.timeScale = 1f;
 		SceneManager.LoadScene("Level-1");
 	}
 	
@@ -113,3 +114,4 @@ public class ActionsButtonsPauseGame : MonoBehaviour
 		SceneManager.LoadScene("QuitGame");
 	}
 }
+

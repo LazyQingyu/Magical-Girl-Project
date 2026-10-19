@@ -20,11 +20,8 @@ public class ActionsButtonsPauseGame : MonoBehaviour
 	public Button buttonRejouer;
 	public Button buttonQuitter;
 	public GameObject backgroundGame;
-	public GameObject PouvoirDashDown;
-	public GameObject PouvoirDashUp;
-	public GameObject ArmureDeFeuDown;
-	public GameObject ArmureDeFeuUp;
-
+	public GameObject player;
+	public GameObject floor;
     void Start()
     {
 		
@@ -56,6 +53,7 @@ public class ActionsButtonsPauseGame : MonoBehaviour
 		buttonQuitter.gameObject.SetActive(false);
 		backgroundGame.gameObject.SetActive(false);
 		*/
+		/*
 		if(coeur1 != null){
 			coeur1.gameObject.SetActive(true);
 		}
@@ -95,11 +93,19 @@ public class ActionsButtonsPauseGame : MonoBehaviour
         if(backgroundGame != null){
 			backgroundGame.gameObject.SetActive(false);
 		}
+		*/
 		
+		if(player != null){
+			player.gameObject.SetActive(true);
+		}
+		if(floor != null){
+			floor.gameObject.SetActive(true);
+		}
 	}
 	
 	public void Rejouer()
 	{
+		Time.timeScale = 1f;
 		SceneManager.LoadScene("Level-1");
 	}
 	
@@ -108,3 +114,36 @@ public class ActionsButtonsPauseGame : MonoBehaviour
 		SceneManager.LoadScene("QuitGame");
 	}
 }
+
+
+/*
+		Met ça dans ton script player en mettant tous les trucs à cacher à SetActive(false) quand on met le jeu en pause.
+
+		public GameObject player;
+		public GameObject floor;
+
+Dans Update() met ça et complète si nécessaire.
+
+	if(Input.GetKey(KeyCode.Space)){
+		Time.timeScale = 0f;
+		if(player != null){
+			player.gameObject.SetActive(false);
+		}
+		if(floor != null){
+			floor.gameObject.SetActive(false);
+		}
+		//Complète les autres truc à cacher s'il y en as.
+		if(buttonContinuer != null){
+			buttonContinuer.gameObject.SetActive(true);
+		}
+		if(buttonRejouer != null){
+			buttonRejouer.gameObject.SetActive(true);
+		}
+		if(buttonQuitter != null){
+			buttonQuitter.gameObject.SetActive(true);
+		}
+        if(backgroundGame != null){
+			backgroundGame.gameObject.SetActive(true);
+		}
+	}
+*/
