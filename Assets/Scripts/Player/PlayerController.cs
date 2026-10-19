@@ -1,6 +1,4 @@
 using System.Collections;
-using NUnit.Framework;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -11,8 +9,11 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D body2D;
 
     [SerializeField] LayerMask layerMaskGround;
+    [SerializeField] Animator player_animator;
+    [SerializeField] SpriteRenderer playerSprite;
+    private PlayerAnim playerAnim;
 
-    private float rayCastSize = 0.8f;
+    
     const Power POWERONE = global::Power.Dash;
     const Power POWERTWO = global::Power.FireArmor;
     const Power POWERNONE = global::Power.None;
@@ -22,21 +23,24 @@ public class PlayerController : MonoBehaviour
     private bool jump_press;
     private bool power_press;
     private bool isDashing;
-    private bool isFireArmor = false;
-    
+    private bool isFireArmor = false;    
 
     public float jumpForce = 10;
     public float dash_force = 20;
     public float dashingTime = 0.2f;
+    private float rayCastSize = 1.5f;
+
     
     [SerializeField]
     private float moveSpeed = 5;
 
     Power powerSelected;
 
+    [Header("Unity Events")]
     public UnityEvent <Power> ActivePower;
     public UnityEvent <bool> FireArmorStatus;
-    public UnityEvent HitByFire;
+    public UnityEvent <bool> DashStatus;
+  
     void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -52,6 +56,7 @@ public class PlayerController : MonoBehaviour
         InputSystem.actions.Disable();
         playerInput.currentActionMap?.Enable();
         body2D = GetComponent<Rigidbody2D>();
+        playerAnim = GetComponent<PlayerAnim>();
         powerSelected = global::Power.None;
         isDashing = false;
     }
@@ -59,13 +64,28 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, rayCastSize , layerMaskGround);
-
+        player_animator.SetBool("isGrounded", isGrounded);
+        player_animator.SetBool("Run", (move_input.x == 0)? false : true);
+        FlipPlayer();
     }
 
+    public void FreezePlayerInput(bool freeze)
+    {
+        playerInput.enabled = !freeze;
+    }
+    void FlipPlayer()
+    {
+        if (move_input.x < 0)
+        {
+            playerSprite.flipX = true;
+        }
+        else if (move_input.x > 0)
+        {
+            playerSprite.flipX = false;
+        }
+    }
     void FixedUpdate()
     {
-        
-    
         if(isDashing)return;
         Move();
         JumpPerformed();
@@ -97,7 +117,6 @@ public class PlayerController : MonoBehaviour
 
     void UseDash()
     {   
-
         StartCoroutine(Dash());
     }
 
@@ -106,6 +125,8 @@ public class PlayerController : MonoBehaviour
         if (!isGrounded)
         {
             isDashing = true;
+            DashStatus?.Invoke(true);
+            StartCoroutine(playerAnim.AfterImageFx());
             float originGravity = body2D.gravityScale;
             body2D.gravityScale = 0f;
             body2D.linearVelocityY = 0f;
@@ -113,6 +134,7 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForSeconds(dashingTime);
             body2D.gravityScale = originGravity;
             isDashing = false;
+            DashStatus?.Invoke(false);
         }
 
     }
@@ -174,19 +196,6 @@ public class PlayerController : MonoBehaviour
     public void OnUsePower()
     {
         power_press = true;
-    }
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-    
-
-        if (collision.CompareTag("Fire"))
-        {
-            if (!isFireArmor)
-            {
-                Debug.Log("I'm in Fire heheh");
-                HitByFire?.Invoke();
-            }
-        }
     }
 
 }

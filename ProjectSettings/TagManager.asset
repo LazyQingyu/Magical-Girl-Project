@@ -7,21 +7,13 @@ TagManager:
   - Score
   - TextBar
   - AllItems
-  - Rat
-  - Bombe
-  - Etoile
-  - Diamond
-  - Diamond Blue
-  - Diamond Red
-  - Diamond Purple
-  - DiamondBluePowerUp
-  - DiamondBlueBar
-  - DiamondBar
   - Ground
   - Fire
-  - Mur
-  - Sol
   - Vie
+  - DiamondBlueBar
+  - DiamondBluePowerUp
+  - DeathZone
+  - CheckPoint
   layers:
   - Default
   - TransparentFX
@@ -32,8 +24,8 @@ TagManager:
   - Ground
   - Fire
   - Player
-  - 
-  - 
+  - DeathZone
+  - CheckPoint
   - 
   - 
   - 
