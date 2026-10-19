@@ -349,6 +349,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &773073813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3354194090595146671, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
+  m_PrefabInstance: {fileID: 8998649407265143740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &773073819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773073813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebcace653837e084b9f68852faf7e638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VieJoueur
+  coeurs: {fileID: 2038153842}
+  vie: {fileID: 0}
 --- !u!1 &1116019323
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,10 +694,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 355140703150234537, guid: 61d02dc7bcf91fc4f86261bb66f29f82, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10
-      objectReference: {fileID: 0}
     - target: {fileID: 5964883103665279130, guid: 61d02dc7bcf91fc4f86261bb66f29f82, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.49
@@ -723,6 +738,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plateforme-dev
       objectReference: {fileID: 0}
+    - target: {fileID: 7945957515163363224, guid: 61d02dc7bcf91fc4f86261bb66f29f82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -763,6 +782,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8433024274145262493, guid: 2b65b00c42ab3eb469927462ac9cf09c, type: 3}
   m_PrefabInstance: {fileID: 8683542032920840967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2038153842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4509634637102710059, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
+  m_PrefabInstance: {fileID: 8998649407265143740}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1479535828926535483
 PrefabInstance:
@@ -1250,21 +1274,53 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6834710863857849813, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
+      propertyPath: TakeDamage.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834710863857849813, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
+      propertyPath: TakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834710863857849813, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
       propertyPath: HitByFire.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1189275888}
     - target: {fileID: 6834710863857849813, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
+      propertyPath: TakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834710863857849813, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
       propertyPath: HitByFire.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834710863857849813, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
+      propertyPath: TakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834710863857849813, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
+      propertyPath: TakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateHUDLife
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834710863857849813, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
+      propertyPath: TakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: VieJoueur, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834710863857849813, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
+      propertyPath: TakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7166360323493929138, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6739982432537684563, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3354194090595146671, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 773073819}
   m_SourcePrefab: {fileID: 100100000, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
 --- !u!1001 &9118352970360621492
 PrefabInstance:

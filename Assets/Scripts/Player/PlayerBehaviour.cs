@@ -32,8 +32,9 @@ public class PlayerBehaviour : MonoBehaviour
     // This method is used to reposition the player when he dies, freeze the player input up to the end of the death animation, reposition the player to the last checkpoint and update the player life in the GameManager
     IEnumerator DeathSequence()
     {
-        TakeDamage?.Invoke();
+        
         GameManagerBehaviour.instance.OnPlayerDeath();
+        TakeDamage?.Invoke();
         playerController.FreezePlayerInput(true);
         RepositionPlayer(checkPoint);
         yield return playerAnim.DeathFx();
@@ -45,8 +46,8 @@ public class PlayerBehaviour : MonoBehaviour
         if (!isFireArmorActive)
         {
             playerAnim.HitFx();
-            TakeDamage?.Invoke();
             GameManagerBehaviour.instance.OnFireZoneHit();
+            TakeDamage?.Invoke();
         }
     }
     // This method is use to reposition the player to a new position, usually used when the player die and need to be repositioned to the last checkpoint or start position
