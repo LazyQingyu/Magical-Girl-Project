@@ -1288,7 +1288,7 @@ PrefabInstance:
     - target: {fileID: 6834710863857849813, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
       propertyPath: TakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 773073819}
     - target: {fileID: 6834710863857849813, guid: 14b1b58a1a0e8704c9d2fc61eb225afb, type: 3}
       propertyPath: HitByFire.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
