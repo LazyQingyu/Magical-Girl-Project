@@ -14,6 +14,7 @@ TagManager:
   - DiamondBluePowerUp
   - DeathZone
   - CheckPoint
+  - Bombe
   layers:
   - Default
   - TransparentFX
