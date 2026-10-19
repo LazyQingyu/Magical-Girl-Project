@@ -24,7 +24,7 @@ public class ActionsButtonsEndGame : MonoBehaviour
 	
 	public void Rejouer()
 	{
-		SceneManager.LoadScene("Base Level");
+		SceneManager.LoadScene("Level-1");
 	}
 	
 	public void Quitter()

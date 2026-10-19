@@ -1,11 +1,14 @@
 using UnityEngine;
+using TMPro;
 
 public class PowerManager : MonoBehaviour
 {
-    public GameObject PouvoirDashDown;
-	public GameObject ArmureDeFeuDown;
-	public GameObject PouvoirDashUp;
-	public GameObject ArmureDeFeuUp;
+    public GameObject pouvoirDashDown;
+	public GameObject armureDeFeuDown;
+	public GameObject pouvoirDashUp;
+	public GameObject armureDeFeuUp;
+	public TextMeshProUGUI textSortDash;
+	public TextMeshProUGUI textSortArmor;
 	private bool state = false;
 	
     void Start()
@@ -26,34 +29,57 @@ public class PowerManager : MonoBehaviour
 			
 			case Power.Dash:
 
-				PouvoirDashDown.gameObject.SetActive(state);
-				PouvoirDashUp.gameObject.SetActive(!state);
-				ArmureDeFeuDown.gameObject.SetActive(!state);
-				ArmureDeFeuUp.gameObject.SetActive(state);
-				
-
+				pouvoirDashDown.gameObject.SetActive(state);
+				pouvoirDashUp.gameObject.SetActive(!state);
+				armureDeFeuDown.gameObject.SetActive(!state);
+				armureDeFeuUp.gameObject.SetActive(state);
+				textSortDash.text = "R";		
+				textSortArmor.text = "E";
 			break;
 			
 			case Power.FireArmor:
 			
 			
-				PouvoirDashDown.gameObject.SetActive(!state);
-				PouvoirDashUp.gameObject.SetActive(state);
-				ArmureDeFeuDown.gameObject.SetActive(state);
-				ArmureDeFeuUp.gameObject.SetActive(!state);
+				pouvoirDashDown.gameObject.SetActive(!state);
+				pouvoirDashUp.gameObject.SetActive(state);
+				armureDeFeuDown.gameObject.SetActive(state);
+				armureDeFeuUp.gameObject.SetActive(!state);
+				textSortDash.text = "A";
+				textSortArmor.text = "R";
 
 			break;
 			
 			case Power.None:
 			
-				PouvoirDashDown.gameObject.SetActive(!state);
-				PouvoirDashUp.gameObject.SetActive(state);
-				ArmureDeFeuDown.gameObject.SetActive(!state);
-				ArmureDeFeuUp.gameObject.SetActive(state);
-				
+				pouvoirDashDown.gameObject.SetActive(!state);
+				pouvoirDashUp.gameObject.SetActive(state);
+				armureDeFeuDown.gameObject.SetActive(!state);
+				armureDeFeuUp.gameObject.SetActive(state);
+				textSortDash.text = "A";
+				textSortArmor.text = "E";
 			break;
 		}
-
+		/*
+		if(sort == Dash || sort == FireArmor){
+			textSort.text = "R";
+		}
+		*/
+		/*
+		if(sort != null){
+			//Debug.Log("ok");
+			textSortDash.text = "A";
+			textSortArmor.text = "E";
+		}
+		*/
+		/*
+				if(armureDeFeuDown.gameObject.SetActive == !state && armureDeFeuUp.gameObject.SetActive == state){
+					textSortArmor.text = "E";
+				}
+		
+				if(pouvoirDashDown.gameObject.SetActive == !state && pouvoirDashUp.gameObject.SetActive == state){
+					textSortDash.text = "A";
+				}
+				*/
 	}
 }
 

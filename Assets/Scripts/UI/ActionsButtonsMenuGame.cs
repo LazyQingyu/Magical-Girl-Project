@@ -26,7 +26,7 @@ public class ActionsButtonsMenuGame : MonoBehaviour
 	public void Jouer()
 	{
 
-		SceneManager.LoadScene("Base Level");
+		SceneManager.LoadScene("Level-1");
 
 	}
 	
