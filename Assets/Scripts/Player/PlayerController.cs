@@ -25,11 +25,14 @@ public class PlayerController : MonoBehaviour
     private bool isDashing;
     private bool canDash;
     private bool isFireArmor = false;    
+    private bool gamePause = false;
 
     public float jumpForce = 10;
     public float dash_force = 20;
     public float dashingTime = 0.2f;
     private float rayCastSize = 1.5f;
+
+    public GameObject pausePanel;
 
     
     [SerializeField]
@@ -64,6 +67,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if(gamePause)return;
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, rayCastSize , layerMaskGround);
         if(isGrounded)
         {
@@ -203,6 +207,21 @@ public class PlayerController : MonoBehaviour
     public void OnUsePower()
     {
         power_press = true;
+    }
+
+    public void OnPause()
+    {
+        if (!gamePause)
+        {
+            Time.timeScale = 0f;
+
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+        gamePause = !gamePause;
+        pausePanel.SetActive(gamePause);
     }
 
 }

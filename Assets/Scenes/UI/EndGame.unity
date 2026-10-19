@@ -831,7 +831,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 752798321}
+      - m_Target: {fileID: 2088013561}
         m_TargetAssemblyTypeName: ActionsButtonsEndGame, Assembly-CSharp
         m_MethodName: Rejouer
         m_Mode: 1
@@ -1378,6 +1378,68 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1640724813
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1976550363}
+    m_Modifications:
+    - target: {fileID: 1661857360015576504, guid: c95aa751ca30ee8f3999587ae639df98, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.73397
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661857360015576504, guid: c95aa751ca30ee8f3999587ae639df98, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 426.14398
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661857360015576504, guid: c95aa751ca30ee8f3999587ae639df98, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661857360015576504, guid: c95aa751ca30ee8f3999587ae639df98, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661857360015576504, guid: c95aa751ca30ee8f3999587ae639df98, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661857360015576504, guid: c95aa751ca30ee8f3999587ae639df98, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661857360015576504, guid: c95aa751ca30ee8f3999587ae639df98, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661857360015576504, guid: c95aa751ca30ee8f3999587ae639df98, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661857360015576504, guid: c95aa751ca30ee8f3999587ae639df98, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661857360015576504, guid: c95aa751ca30ee8f3999587ae639df98, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105034780376735359, guid: c95aa751ca30ee8f3999587ae639df98, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c95aa751ca30ee8f3999587ae639df98, type: 3}
+--- !u!4 &1640724814 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1661857360015576504, guid: c95aa751ca30ee8f3999587ae639df98, type: 3}
+  m_PrefabInstance: {fileID: 1640724813}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1829782932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,6 +1579,7 @@ Transform:
   - {fileID: 1235480683}
   - {fileID: 1014302668}
   - {fileID: 929755203}
+  - {fileID: 1640724814}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2087395183

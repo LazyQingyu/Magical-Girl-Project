@@ -52,6 +52,10 @@ public class GameManagerBehaviour : MonoBehaviour
     void OnLifeChange(int damage)
     {
         lifes = Mathf.Clamp(lifes+damage, 0, MAX_LIFES);
+        if(lifes <= 0)
+        {
+            GameOver();
+        }
     }
 
     public void AddOneLife()
@@ -63,17 +67,16 @@ public class GameManagerBehaviour : MonoBehaviour
     {
         SceneManager.LoadScene(goalName);
     }
+
+     public void GoalReached(int goalName)
+    {
+        SceneManager.LoadScene(goalName);
+    }
     // This method checks if the player has no more lifes and resets the player position to the start position and resets the player lifes to base value
     void GameOver()
     {
-        if (lifes <= 0)
-        {
-            SceneManager.LoadScene("EndGame");
-        }
+        lifes = BASE_LIFES;
+        SceneManager.LoadSceneAsync(4);
+    }
 
-    }
-    void Update()
-    {
-        GameOver();
-    }
 }

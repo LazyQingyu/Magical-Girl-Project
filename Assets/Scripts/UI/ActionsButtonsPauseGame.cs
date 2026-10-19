@@ -106,12 +106,12 @@ public class ActionsButtonsPauseGame : MonoBehaviour
 	public void Rejouer()
 	{
 		Time.timeScale = 1f;
-		SceneManager.LoadScene("Level-1");
+		SceneManager.LoadSceneAsync("Level-1");
 	}
 	
 	public void Quitter()
 	{
-		SceneManager.LoadScene("QuitGame");
+		Application.Quit();
 	}
 }
 

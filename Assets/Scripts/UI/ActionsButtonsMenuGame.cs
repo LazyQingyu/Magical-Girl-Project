@@ -37,6 +37,6 @@ public class ActionsButtonsMenuGame : MonoBehaviour
 	
 	public void Quitter()
 	{
-		SceneManager.LoadScene("QuitGame");
+		Application.Quit();
 	}
 }

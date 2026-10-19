@@ -10,18 +10,13 @@ public class ActionsButtonsEndGame : MonoBehaviour
     
 	public Button buttonRejouer;
 	public Button buttonQuitter;
-	
-    void Start()
-    {
-        
-    }
 
-    
-    void Update()
-    {
-        
-    }
-	
+	void Start()
+	{
+		
+	}
+
+
 	public void Rejouer()
 	{
 		SceneManager.LoadScene("Level-1");
@@ -29,6 +24,6 @@ public class ActionsButtonsEndGame : MonoBehaviour
 	
 	public void Quitter()
 	{
-		SceneManager.LoadScene("QuitGame");
+		Application.Quit();
 	}
 }
