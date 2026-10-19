@@ -5222,42 +5222,6 @@ MonoBehaviour:
   ActivePower:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PowerManager, Assembly-CSharp
-        m_MethodName: AssignPower
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6267366873886715413}
-        m_TargetAssemblyTypeName: PowerManager, Assembly-CSharp
-        m_MethodName: AssignPower
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6267366873886715413}
-        m_TargetAssemblyTypeName: PowerManager, Assembly-CSharp
-        m_MethodName: AssignPower
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 6267366873886715413}
         m_TargetAssemblyTypeName: PowerManager, Assembly-CSharp
         m_MethodName: AssignPower
@@ -5394,6 +5358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8256e9c7d94b46a886fee8fd42bbebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBehaviour
+  hudLife: {fileID: 8999491845565949365}
   playerController: {fileID: 1867890218523222410}
   TakeDamage:
     m_PersistentCalls:
@@ -5520,6 +5485,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b36054f5bad93874693db722609b3d55, type: 3}
+--- !u!114 &3862572440122990418 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3165549160752344506, guid: b36054f5bad93874693db722609b3d55, type: 3}
+  m_PrefabInstance: {fileID: 2194615433579164392}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!224 &5801942170718795701 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5688174637022578013, guid: b36054f5bad93874693db722609b3d55, type: 3}
@@ -5901,8 +5877,8 @@ MonoBehaviour:
   armureDeFeuDown: {fileID: 48599485518741252}
   pouvoirDashUp: {fileID: 1511849138177265706}
   armureDeFeuUp: {fileID: 4502937433667370043}
-  textSortDash: {fileID: 0}
-  textSortArmor: {fileID: 0}
+  textDash: {fileID: 3862572440122990418}
+  textArmor: {fileID: 3207454816846520896}
 --- !u!114 &8999491845565949365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5915,7 +5891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebcace653837e084b9f68852faf7e638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VieJoueur
-  coeurs: {fileID: 0}
+  coeurs: {fileID: 2013083980011622532}
 --- !u!1 &4502937433667370043 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9174319682336113164, guid: e40e9767318c7f34886cf210bf380b1a, type: 3}
@@ -6320,3 +6296,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8742604341103306797, guid: 9add298110ba1ea458cf51fa4fd41989, type: 3}
   m_PrefabInstance: {fileID: 8473954402055610594}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3207454816846520896 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6420624026605011618, guid: 9add298110ba1ea458cf51fa4fd41989, type: 3}
+  m_PrefabInstance: {fileID: 8473954402055610594}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI

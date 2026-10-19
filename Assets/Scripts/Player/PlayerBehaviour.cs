@@ -7,6 +7,7 @@ public class PlayerBehaviour : MonoBehaviour
     private Vector2 startPosition;
     private Vector2 checkPoint;
 
+    public VieJoueur hudLife;
     private bool isFireArmorActive;
 
     private PlayerAnim playerAnim;
@@ -77,6 +78,11 @@ public class PlayerBehaviour : MonoBehaviour
         if(collision.CompareTag("DeathZone"))
         {
             Dead();
+        }
+
+        if (collision.CompareTag("Vie"))
+        {
+            hudLife.UpdateAtAddLife();
         }
 
     }

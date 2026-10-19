@@ -54,6 +54,10 @@ public class GameManagerBehaviour : MonoBehaviour
         lifes = Mathf.Clamp(lifes+damage, 0, MAX_LIFES);
     }
 
+    public void AddOneLife()
+    {
+        OnLifeChange(1);
+    }
 
     // This method checks if the player has no more lifes and resets the player position to the start position and resets the player lifes to base value
     void GameOver()
