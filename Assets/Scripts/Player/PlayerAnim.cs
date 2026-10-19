@@ -65,10 +65,20 @@ public class PlayerAnim : MonoBehaviour
         spriteRenderer.color = afterImageGradient.Evaluate(1f);
         Destroy(spriteRenderer.gameObject,0.3f);
     }
-    // Fx when the player get hit or respawn, the player will flash for a short period of time to indicate that he is invulnerable
-    public IEnumerator HitFx()
+
+    public Coroutine DeathFx()
     {
         playerAnimator.SetTrigger("isRespawn");
+        return StartCoroutine(HitAnim());
+
+    }
+    public void HitFx()
+    {
+        StartCoroutine(HitAnim());
+    }
+    // Fx when the player get hit or respawn, the player will flash for a short period of time to indicate that he is invulnerable
+    IEnumerator HitAnim()
+    {
         for(int i = 0; i < 4; i++)
         {
             spriteRenderer.color = new Color(1, 1, 1, 0);
