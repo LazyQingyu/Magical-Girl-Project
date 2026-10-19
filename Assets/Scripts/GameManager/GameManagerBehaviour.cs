@@ -7,7 +7,7 @@ public class GameManagerBehaviour : MonoBehaviour
     public int fireZoneDamage = -1;
     public int fallDamage = -1;
 
-    const int MAX_LIFES = 5;
+    const int MAX_LIFES = 3;
     const int BASE_LIFES = 3;
     public int lifes;
     
@@ -59,6 +59,10 @@ public class GameManagerBehaviour : MonoBehaviour
         OnLifeChange(1);
     }
 
+    public void EndGoalReached()
+    {
+        SceneManager.LoadScene("EndGame");
+    }
     // This method checks if the player has no more lifes and resets the player position to the start position and resets the player lifes to base value
     void GameOver()
     {

@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class GoalTrigger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.CompareTag("Player"))
+        {
+            GameManagerBehaviour.instance.EndGoalReached();
+        }
     }
 }

@@ -10,11 +10,11 @@ TagManager:
   - Ground
   - Fire
   - Vie
-  - DiamondBlueBar
-  - DiamondBluePowerUp
   - DeathZone
   - CheckPoint
-  - Bombe
+  - Background
+  - FlameFloorGroup
+  - PlateformeGroup
   layers:
   - Default
   - TransparentFX

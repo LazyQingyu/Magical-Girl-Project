@@ -4886,7 +4886,6 @@ GameObject:
   - component: {fileID: 1631827700747831522}
   - component: {fileID: 843073093392837737}
   - component: {fileID: 6834710863857849813}
-  - component: {fileID: 5407750073706609295}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -5218,7 +5217,7 @@ MonoBehaviour:
   jumpForce: 10
   dash_force: 5
   dashingTime: 0.3
-  moveSpeed: 7
+  moveSpeed: 10
   ActivePower:
     m_PersistentCalls:
       m_Calls:
@@ -5375,19 +5374,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5407750073706609295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7166360323493929138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebcace653837e084b9f68852faf7e638, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::VieJoueur
-  coeurs: {fileID: 2013083980011622532}
 --- !u!1001 &2194615433579164392
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private bool jump_press;
     private bool power_press;
     private bool isDashing;
+    private bool canDash;
     private bool isFireArmor = false;    
 
     public float jumpForce = 10;
@@ -64,10 +65,15 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, rayCastSize , layerMaskGround);
+        if(isGrounded)
+        {
+            canDash = true;
+        }
         player_animator.SetBool("isGrounded", isGrounded);
         player_animator.SetBool("Run", (move_input.x == 0)? false : true);
         FlipPlayer();
     }
+
 
     public void FreezePlayerInput(bool freeze)
     {
@@ -122,8 +128,9 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Dash()
     {
-        if (!isGrounded)
+        if (!isGrounded && canDash)
         {
+            canDash = false;
             isDashing = true;
             DashStatus?.Invoke(true);
             StartCoroutine(playerAnim.AfterImageFx());

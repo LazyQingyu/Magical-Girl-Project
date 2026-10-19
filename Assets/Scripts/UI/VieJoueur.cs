@@ -16,16 +16,15 @@ public class VieJoueur : MonoBehaviour
     void Start()
     {
 		vies = GameManagerBehaviour.instance.lifes;
-		Debug.Log(vies);
     }
 
 	public void UpdateHUDLife()
 	{	
 		vies = GameManagerBehaviour.instance.lifes;
 		Debug.Log("vies in hud update : "+vies);
-		for(int i = 0; i < vies; i++)
+		for(int i = 0; i < vies; i ++)
 		{
-			coeurs.transform.GetChild(vies-i).gameObject.SetActive(false);
+			coeurs.transform.GetChild(i).gameObject.SetActive(false);
 		}
 	}
 
