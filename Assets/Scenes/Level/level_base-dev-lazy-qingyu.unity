@@ -755,6 +755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 8443244994469377120, guid: 97280891f44cc6c73b85a331555bb8a6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1268,12 +1272,12 @@ SceneRoots:
   - {fileID: 8998649407265143740}
   - {fileID: 1595075145}
   - {fileID: 743664260}
+  - {fileID: 6759889814415459726}
+  - {fileID: 3915410485703400206}
   - {fileID: 1873966988}
   - {fileID: 8683542032920840967}
   - {fileID: 1456619248}
   - {fileID: 1116019324}
   - {fileID: 12537157}
   - {fileID: 9118352970360621492}
-  - {fileID: 6759889814415459726}
-  - {fileID: 3915410485703400206}
   - {fileID: 1479535828926535483}
