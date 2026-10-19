@@ -5422,10 +5422,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab05a1d41ea01d409e3b8f6ec90b1e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerManager
-  pouvoirDashDown: {fileID: 0}
-  armureDeFeuDown: {fileID: 0}
-  pouvoirDashUp: {fileID: 0}
-  armureDeFeuUp: {fileID: 0}
+  pouvoirDashDown: {fileID: 8572649945973204243}
+  armureDeFeuDown: {fileID: 48599485518741252}
+  pouvoirDashUp: {fileID: 1511849138177265706}
+  armureDeFeuUp: {fileID: 4502937433667370043}
   textSortDash: {fileID: 0}
   textSortArmor: {fileID: 0}
 --- !u!1001 &328748599378216845
@@ -5641,6 +5641,16 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8999491845565949365}
   m_SourcePrefab: {fileID: 100100000, guid: e40e9767318c7f34886cf210bf380b1a, type: 3}
+--- !u!1 &48599485518741252 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4719972936215544115, guid: e40e9767318c7f34886cf210bf380b1a, type: 3}
+  m_PrefabInstance: {fileID: 4696162157040614967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1511849138177265706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6185470192773033501, guid: e40e9767318c7f34886cf210bf380b1a, type: 3}
+  m_PrefabInstance: {fileID: 4696162157040614967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3354194090595146671 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8043538167173408152, guid: e40e9767318c7f34886cf210bf380b1a, type: 3}
@@ -5658,10 +5668,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab05a1d41ea01d409e3b8f6ec90b1e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerManager
-  pouvoirDashDown: {fileID: 0}
-  armureDeFeuDown: {fileID: 0}
-  pouvoirDashUp: {fileID: 0}
-  armureDeFeuUp: {fileID: 0}
+  pouvoirDashDown: {fileID: 8572649945973204243}
+  armureDeFeuDown: {fileID: 48599485518741252}
+  pouvoirDashUp: {fileID: 1511849138177265706}
+  armureDeFeuUp: {fileID: 4502937433667370043}
   textSortDash: {fileID: 0}
   textSortArmor: {fileID: 0}
 --- !u!114 &8999491845565949365
@@ -5678,9 +5688,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VieJoueur
   coeurs: {fileID: 4509634637102710059}
   vie: {fileID: 0}
+--- !u!1 &4502937433667370043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9174319682336113164, guid: e40e9767318c7f34886cf210bf380b1a, type: 3}
+  m_PrefabInstance: {fileID: 4696162157040614967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7303029026959565418 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2627160633409477725, guid: e40e9767318c7f34886cf210bf380b1a, type: 3}
+  m_PrefabInstance: {fileID: 4696162157040614967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8572649945973204243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4022898834664889124, guid: e40e9767318c7f34886cf210bf380b1a, type: 3}
   m_PrefabInstance: {fileID: 4696162157040614967}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6144220732663163041
