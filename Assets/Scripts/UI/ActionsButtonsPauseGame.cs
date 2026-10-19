@@ -20,11 +20,8 @@ public class ActionsButtonsPauseGame : MonoBehaviour
 	public Button buttonRejouer;
 	public Button buttonQuitter;
 	public GameObject backgroundGame;
-	public GameObject PouvoirDashDown;
-	public GameObject PouvoirDashUp;
-	public GameObject ArmureDeFeuDown;
-	public GameObject ArmureDeFeuUp;
-
+	public GameObject player;
+	public GameObject floor;
     void Start()
     {
 		
@@ -56,6 +53,7 @@ public class ActionsButtonsPauseGame : MonoBehaviour
 		buttonQuitter.gameObject.SetActive(false);
 		backgroundGame.gameObject.SetActive(false);
 		*/
+		/*
 		if(coeur1 != null){
 			coeur1.gameObject.SetActive(true);
 		}
@@ -95,7 +93,14 @@ public class ActionsButtonsPauseGame : MonoBehaviour
         if(backgroundGame != null){
 			backgroundGame.gameObject.SetActive(false);
 		}
+		*/
 		
+		if(player != null){
+			player.gameObject.SetActive(true);
+		}
+		if(floor != null){
+			floor.gameObject.SetActive(true);
+		}
 	}
 	
 	public void Rejouer()

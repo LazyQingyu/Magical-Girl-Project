@@ -100,7 +100,7 @@ public class ActionsButtonsPauseGame : MonoBehaviour
 	
 	public void Rejouer()
 	{
-		SceneManager.LoadScene("level-1");
+		SceneManager.LoadScene("Level-1");
 	}
 	
 	public void Quitter()
