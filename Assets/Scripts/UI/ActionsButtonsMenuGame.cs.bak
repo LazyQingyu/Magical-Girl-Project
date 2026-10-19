@@ -28,7 +28,7 @@ public class ActionsButtonsMenuGame : MonoBehaviour
 		NewScriptableObjectScript.scores = 0;
 		PlayerPrefs.SetInt("Score", 0);
 		PlayerPrefs.Save();
-		SceneManager.LoadScene("Game");
+		SceneManager.LoadScene("Base Level");
 
 	}
 	
